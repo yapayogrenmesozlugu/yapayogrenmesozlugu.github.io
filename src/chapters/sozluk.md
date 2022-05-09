@@ -649,5 +649,5 @@
 - **zero-data learning:** verisiz öğrenme  
 - **zero-shot learning:** verisiz öğrenme  
 
-## Other
+## Diğer
 - **0-1 loss:** 0-1 kayıp  
