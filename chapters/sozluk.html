@@ -1,918 +1,5302 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    
-    <title>1. Sözlük &#8212; Yapay Öğrenme Sözlüğü 0.0.1 documentation</title>
-
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/d2l.css" />
-    <link rel="stylesheet" href="../_static/material-design-lite-1.3.0/material.red-deep_orange.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx_materialdesign_theme.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/fontawesome/all.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
-    <script src="../_static/d2l.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2. Biz Kimiz?" href="biz_kimiz.html" />
-    <link rel="prev" title="Yapay Öğrenme Sözlüğü" href="../index.html" /> 
-  </head>
-<body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer"><header class="mdl-layout__header mdl-layout__header--waterfall ">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+  <title>
+   1. Sözlük — Yapay Öğrenme Sözlüğü 0.0.1 documentation
+  </title>
+  <link href="../_static/material-design-lite-1.3.0/material.red-deep_orange.min.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/sphinx_materialdesign_theme.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/fontawesome/all.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/fonts.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/basic.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/d2l.css" rel="stylesheet" type="text/css"/>
+  <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js">
+  </script>
+  <script src="../_static/jquery.js">
+  </script>
+  <script src="../_static/underscore.js">
+  </script>
+  <script src="../_static/doctools.js">
+  </script>
+  <script src="../_static/d2l.js">
+  </script>
+  <link href="../genindex.html" rel="index" title="Index"/>
+  <link href="../search.html" rel="search" title="Search"/>
+  <link href="biz_kimiz.html" rel="next" title="2. Biz Kimiz?"/>
+  <link href="../index.html" rel="prev" title="Yapay Öğrenme Sözlüğü"/>
+ </head>
+ <body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+   <header class="mdl-layout__header mdl-layout__header--waterfall">
     <div class="mdl-layout__header-row">
-        
-        <nav class="mdl-navigation breadcrumb">
-            <a class="mdl-navigation__link is-active"><span class="section-number">1. </span>Sözlük</a>
-        </nav>
-        <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation">
-        
-<form class="form-inline pull-sm-right" action="../search.html" method="get">
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-        <label id="quick-search-icon" class="mdl-button mdl-js-button mdl-button--icon"  for="waterfall-exp">
-          <i class="material-icons">search</i>
+     <nav class="mdl-navigation breadcrumb">
+      <a class="mdl-navigation__link is-active">
+       <span class="section-number">
+        1.
+       </span>
+       Sözlük
+      </a>
+     </nav>
+     <div class="mdl-layout-spacer">
+     </div>
+     <nav class="mdl-navigation">
+      <form action="../search.html" class="form-inline pull-sm-right" method="get">
+       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp" id="quick-search-icon">
+         <i class="material-icons">
+          search
+         </i>
         </label>
         <div class="mdl-textfield__expandable-holder">
-          <input class="mdl-textfield__input" type="text" name="q"  id="waterfall-exp" placeholder="Search" />
-          <input type="hidden" name="check_keywords" value="yes" />
-          <input type="hidden" name="area" value="default" />
+         <input class="mdl-textfield__input" id="waterfall-exp" name="q" placeholder="Search" type="text"/>
+         <input name="check_keywords" type="hidden" value="yes"/>
+         <input name="area" type="hidden" value="default"/>
         </div>
+       </div>
+       <div class="mdl-tooltip" data-mdl-for="quick-search-icon">
+        Hızlı ara
+       </div>
+      </form>
+      <a class="mdl-button mdl-js-button mdl-button--icon" href="../_sources/chapters/sozluk.rst.txt" id="button-show-source" rel="nofollow">
+       <i class="material-icons">
+        code
+       </i>
+      </a>
+      <div class="mdl-tooltip" data-mdl-for="button-show-source">
+       Kaynak metni göster
       </div>
-      <div class="mdl-tooltip" data-mdl-for="quick-search-icon">
-      Quick search
-      </div>
-</form>
-        
-<a id="button-show-source"
-    class="mdl-button mdl-js-button mdl-button--icon"
-    href="../_sources/chapters/sozluk.rst.txt" rel="nofollow">
-  <i class="material-icons">code</i>
-</a>
-<div class="mdl-tooltip" data-mdl-for="button-show-source">
-Show Source
-</div>
-        </nav>
+     </nav>
     </div>
     <div class="mdl-layout__header-row header-links">
-      <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-      </nav>
+     <div class="mdl-layout-spacer">
+     </div>
+     <nav class="mdl-navigation">
+     </nav>
     </div>
-</header><header class="mdl-layout__drawer">
-    
-          <!-- Title -->
-      <span class="mdl-layout-title">
-          <a class="title" href="../index.html">
-              <span class="title-text">
-                  Yapay Öğrenme Sözlüğü
-              </span>
-          </a>
+   </header>
+   <header class="mdl-layout__drawer">
+    <!-- Title -->
+    <span class="mdl-layout-title">
+     <a class="title" href="../index.html">
+      <span class="title-text">
+       Yapay Öğrenme Sözlüğü
       </span>
-    
-    
-      <div class="globaltoc">
-        <span class="mdl-layout-title toc">Table Of Contents</span>
-        
-        
-            
-            <nav class="mdl-navigation">
-                <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Sözlük</a></li>
-<li class="toctree-l1"><a class="reference internal" href="biz_kimiz.html">2. Biz Kimiz?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="iletisim.html">3. İletişim</a></li>
-</ul>
-
-            </nav>
-        
-        </div>
-    
-</header>
-        <main class="mdl-layout__content" tabIndex="0">
-
-	<script type="text/javascript" src="../_static/sphinx_materialdesign_theme.js "></script>
+     </a>
+    </span>
+    <div class="globaltoc">
+     <span class="mdl-layout-title toc">
+      İçindekiler
+     </span>
+     <nav class="mdl-navigation">
+      <ul class="current">
+       <li class="toctree-l1 current">
+        <a class="current reference internal" href="#">
+         1. Sözlük
+        </a>
+       </li>
+       <li class="toctree-l1">
+        <a class="reference internal" href="biz_kimiz.html">
+         2. Biz Kimiz?
+        </a>
+       </li>
+       <li class="toctree-l1">
+        <a class="reference internal" href="iletisim.html">
+         3. İletişim
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </header>
+   <main class="mdl-layout__content" tabindex="0">
+    <script src="../_static/sphinx_materialdesign_theme.js " type="text/javascript">
+    </script>
     <header class="mdl-layout__drawer">
-    
-          <!-- Title -->
-      <span class="mdl-layout-title">
-          <a class="title" href="../index.html">
-              <span class="title-text">
-                  Yapay Öğrenme Sözlüğü
-              </span>
-          </a>
+     <!-- Title -->
+     <span class="mdl-layout-title">
+      <a class="title" href="../index.html">
+       <span class="title-text">
+        Yapay Öğrenme Sözlüğü
+       </span>
+      </a>
+     </span>
+     <div class="globaltoc">
+      <span class="mdl-layout-title toc">
+       İçindekiler
       </span>
-    
-    
-      <div class="globaltoc">
-        <span class="mdl-layout-title toc">Table Of Contents</span>
-        
-        
-            
-            <nav class="mdl-navigation">
-                <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Sözlük</a></li>
-<li class="toctree-l1"><a class="reference internal" href="biz_kimiz.html">2. Biz Kimiz?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="iletisim.html">3. İletişim</a></li>
-</ul>
-
-            </nav>
-        
-        </div>
-    
-</header>
-
+      <nav class="mdl-navigation">
+       <ul class="current">
+        <li class="toctree-l1 current">
+         <a class="current reference internal" href="#">
+          1. Sözlük
+         </a>
+        </li>
+        <li class="toctree-l1">
+         <a class="reference internal" href="biz_kimiz.html">
+          2. Biz Kimiz?
+         </a>
+        </li>
+        <li class="toctree-l1">
+         <a class="reference internal" href="iletisim.html">
+          3. İletişim
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+    </header>
     <div class="document">
-        <div class="page-content" role="main">
-        
-  <div class="section" id="sozluk">
-<h1><span class="section-number">1. </span>Sözlük<a class="headerlink" href="#sozluk" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="a">
-<h2><span class="section-number">1.1. </span>A<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>absolute value verification:</strong> mutlak değer doğrulaması</p></li>
-<li><p><strong>accuracy:</strong> doğruluk</p></li>
-<li><p><strong>activation function:</strong> aktifleştirme fonksiyonu</p></li>
-<li><p><strong>active constraint:</strong> aktif kısıt</p></li>
-<li><p><strong>adaptive linear element:</strong> uyarlanır doğrusal eleman</p></li>
-<li><p><strong>adversarial example:</strong> çekişmeli örnek</p></li>
-<li><p><strong>adversarial training:</strong> çekişmeli eğitme</p></li>
-<li><p><strong>affine:</strong> ilgin</p></li>
-<li><p><strong>almost everywhere:</strong> hemen hemen her yerde</p></li>
-<li><p><strong>almost sure convergence:</strong> hemen hemen kesin yakınsama</p></li>
-<li><p><strong>ancestral sampling:</strong> geçmiş örnekleme</p></li>
-<li><p><strong>annealed importance sampling:</strong> tavlı önem örnekleme</p></li>
-<li><p><strong>approximation:</strong> yaklaşıklık</p></li>
-<li><p><strong>approximate bayesian computation:</strong> yaklaşık Bayes hesaplaması</p></li>
-<li><p><strong>approximate inference:</strong> yaklaşık çıkarım</p></li>
-<li><p><strong>array:</strong> dizi</p></li>
-<li><p><strong>artificial intelligence:</strong> yapay zeka</p></li>
-<li><p><strong>artificial neural network:</strong> yapay sinir ağı</p></li>
-<li><p><strong>asymptotically unbiased:</strong> asimptotik önyargısız</p></li>
-<li><p><strong>asynchronize:</strong> asenkron</p></li>
-<li><p><strong>attribute:</strong> nitelik</p></li>
-<li><p><strong>audio:</strong> ses</p></li>
-<li><p><strong>autoencoder:</strong> otokodlayıcı</p></li>
-<li><p><strong>automatic speech recognition:</strong> konuşma tanıma</p></li>
-<li><p><strong>autoregressive networks:</strong> otobağlayıcı ağlar</p></li>
-</ul>
-</div>
-<div class="section" id="b">
-<h2><span class="section-number">1.2. </span>B<a class="headerlink" href="#b" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>back-propagation:</strong> geri yayılım</p></li>
-<li><p><strong>back-propagation through time:</strong> zamanla geri yayılım</p></li>
-<li><p><strong>bag of words:</strong> sözcük çuvalı</p></li>
-<li><p><strong>bagging:</strong> istifleme</p></li>
-<li><p><strong>batch:</strong> yığın</p></li>
-<li><p><strong>batch normalization:</strong> yığın normalleştirme</p></li>
-<li><p><strong>Bayes error:</strong> Bayes hatası</p></li>
-<li><p><strong>Bayes rule:</strong> Bayes kuralı</p></li>
-<li><p><strong>Bayesian hyperparameter optimization:</strong> Bayesçi hiperparametre
-eniyileme</p></li>
-<li><p><strong>Bayesian network:</strong> Bayes ağı</p></li>
-<li><p><strong>Bayesian probability:</strong> Bayes olasılığı</p></li>
-<li><p><strong>Bayesian statistics:</strong> Bayes istatistiği</p></li>
-<li><p><strong>belief network:</strong> inanç ağı</p></li>
-<li><p><strong>benchmark:</strong> denek taşı</p></li>
-<li><p><strong>Bernoulli distribution:</strong> Bernoulli dağılımı</p></li>
-<li><p><strong>bias:</strong> önyargı</p></li>
-<li><p><strong>bias parameter:</strong> önyargı parametresi</p></li>
-<li><p><strong>biased importance sampling:</strong> önyargılı önem örnekleme</p></li>
-<li><p><strong>binary relation:</strong> ikili bağıntı</p></li>
-<li><p><strong>block gibbs sampling:</strong> blok Gibbs örnekleme</p></li>
-<li><p><strong>boltzmann distribution:</strong> Boltzmann dağılımı</p></li>
-<li><p><strong>boltzmann machine:</strong> Boltzmann makinesi</p></li>
-<li><p><strong>broadcasting:</strong> yayımlama</p></li>
-<li><p><strong>brute force:</strong> kaba kuvvet</p></li>
-<li><p><strong>burn in:</strong> alıştırma</p></li>
-</ul>
-</div>
-<div class="section" id="c">
-<h2><span class="section-number">1.3. </span>C<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>calculus:</strong> analiz</p></li>
-<li><p><strong>calculus of variations:</strong> değişim analizi</p></li>
-<li><p><strong>cascade:</strong> aşamalı</p></li>
-<li><p><strong>categorical distribution:</strong> kategorik dağılım</p></li>
-<li><p><strong>centering trick:</strong> ortalama hilesi</p></li>
-<li><p><strong>central limit theorem:</strong> merkezi limit teoremi</p></li>
-<li><p><strong>chain rule:</strong> zincir kuralı</p></li>
-<li><p><strong>chain rule of productivity:</strong> olasılığın zincir kuralı</p></li>
-<li><p><strong>chess:</strong> satranç</p></li>
-<li><p><strong>chord:</strong> kiriş</p></li>
-<li><p><strong>chordal graph:</strong> kirişli çizge</p></li>
-<li><p><strong>class-based language models:</strong> sınıf tabanlı dil modelleri</p></li>
-<li><p><strong>classical dynamic system:</strong> klasik dinamik sistem</p></li>
-<li><p><strong>classification:</strong> sınıflandırma</p></li>
-<li><p><strong>clique:</strong> klik</p></li>
-<li><p><strong>clique potential:</strong> klik potansiyeli</p></li>
-<li><p><strong>collaborative filtering:</strong> dayanışmalı filtreleme</p></li>
-<li><p><strong>collider:</strong> çarpıştırıcı</p></li>
-<li><p><strong>color images:</strong> renkli görüntüler</p></li>
-<li><p><strong>complex cell:</strong> karmaşık hücre</p></li>
-<li><p><strong>computational graph:</strong> hesaplamalı çizge</p></li>
-<li><p><strong>computer vision:</strong> bilgisayarlı görü</p></li>
-<li><p><strong>concept drift:</strong> kavram sapması</p></li>
-<li><p><strong>condition number:</strong> matrisin sağlamlık sayısı</p></li>
-<li><p><strong>conditional computation:</strong> koşullu hesaplama</p></li>
-<li><p><strong>conditional independence:</strong> koşullu bağımsızlık</p></li>
-<li><p><strong>conditional probability:</strong> koşullu olasılık</p></li>
-<li><p><strong>conditional RBM:</strong> koşullu RBM</p></li>
-<li><p><strong>connectionism:</strong> bağlantıcılık</p></li>
-<li><p><strong>connectionist temporal classification:</strong> bağlantıcı zamansal
-sınıflandırma</p></li>
-<li><p><strong>consistency:</strong> tutarlılık</p></li>
-<li><p><strong>constancy:</strong> sabitlik</p></li>
-<li><p><strong>constrained optimization:</strong> kısıtlı eniyileme</p></li>
-<li><p><strong>content-based addressing:</strong> içerik-tabanlı adresleme</p></li>
-<li><p><strong>content-based recommender systems:</strong> içerik-tabanlı öneri
-sistemleri</p></li>
-<li><p><strong>context:</strong> bağlam</p></li>
-<li><p><strong>context specific independence:</strong> bağlama özgü bağımsızlık</p></li>
-<li><p><strong>contextual bandits:</strong> bağlamsal yol kesmeler</p></li>
-<li><p><strong>continuation methods:</strong> sürdürme yöntemleri</p></li>
-<li><p><strong>continuous:</strong> sürekli</p></li>
-<li><p><strong>contractive autoencoder:</strong> daraltan otokodlayıcı</p></li>
-<li><p><strong>contrast:</strong> karşıtlık</p></li>
-<li><p><strong>contrastive divergence:</strong> karşıtsal ıraksama</p></li>
-<li><p><strong>convex optimization:</strong> dışbükey eniyileme</p></li>
-<li><p><strong>convolution:</strong> evrişim</p></li>
-<li><p><strong>convolutional network:</strong> evrişimsel ağ</p></li>
-<li><p><strong>convolutional neural network:</strong> evrişimsel sinir ağı</p></li>
-<li><p><strong>coordinate descent:</strong> koordinat inişi</p></li>
-<li><p><strong>coordinate ascent:</strong> koordinat çıkışı</p></li>
-<li><p><strong>correlation:</strong> korelasyon</p></li>
-<li><p><strong>cost function:</strong> maliyet fonksiyonu</p></li>
-<li><p><strong>covariance:</strong> eşdeğişirlik</p></li>
-<li><p><strong>covariance matrix:</strong> eşdeğişirlik matrisi</p></li>
-<li><p><strong>coverage:</strong> kapsama</p></li>
-<li><p><strong>critical temperature:</strong> kritik sıcaklık</p></li>
-<li><p><strong>cross-correlation:</strong> çapraz korelasyon</p></li>
-<li><p><strong>cross-entropy:</strong> çapraz entropi</p></li>
-<li><p><strong>cross-validation:</strong> çapraz sağlama</p></li>
-<li><p><strong>curriculum learning:</strong> müfredat öğrenme</p></li>
-<li><p><strong>curse of dimensionality:</strong> boyut laneti</p></li>
-</ul>
-</div>
-<div class="section" id="d">
-<h2><span class="section-number">1.4. </span>D<a class="headerlink" href="#d" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>d-seperation:</strong> d-ayırma</p></li>
-<li><p><strong>damping:</strong> söndürme</p></li>
-<li><p><strong>data generating distribution:</strong> veri üretim dağılımı</p></li>
-<li><p><strong>data generating process:</strong> veri üretim işlemi</p></li>
-<li><p><strong>data parallelism:</strong> veri paralelleştirme</p></li>
-<li><p><strong>dataset:</strong> veri kümesi</p></li>
-<li><p><strong>dataset augmentation:</strong> veri kümesi çeşitleme</p></li>
-<li><p><strong>debugging:</strong> hata ayıklama</p></li>
-<li><p><strong>decision tree:</strong> karar ağacı</p></li>
-<li><p><strong>decoder:</strong> kodçözücü</p></li>
-<li><p><strong>deep belief network:</strong> derin inanç ağı</p></li>
-<li><p><strong>deep Boltzmann machine:</strong> derin Boltzmann makinesi</p></li>
-<li><p><strong>deep feedforward network:</strong> derin ileri besleme ağı</p></li>
-<li><p><strong>deep learning:</strong> derin öğrenme</p></li>
-<li><p><strong>degenerate:</strong> yozlaşmış</p></li>
-<li><p><strong>denoising autoencoder:</strong> arıtan otokodlayıcı</p></li>
-<li><p><strong>denoising score matching:</strong> arıtan skor eşleştirme</p></li>
-<li><p><strong>density estimation:</strong> yoğunluk kestirimi</p></li>
-<li><p><strong>derivative:</strong> türev</p></li>
-<li><p><strong>design matrix:</strong> açıklayıcı değişkenler matrisi</p></li>
-<li><p><strong>detector layer:</strong> detektör katman</p></li>
-<li><p><strong>diagonal matrix:</strong> köşegen matris</p></li>
-<li><p><strong>differential entropy:</strong> diferansiyel entropi</p></li>
-<li><p><strong>Dirac delta function:</strong> Dirac delta fonksiyonu</p></li>
-<li><p><strong>directed acyclic graph:</strong> yönlü çevrimsiz çizgesel</p></li>
-<li><p><strong>directed graph model:</strong> yönlü çizgesel model</p></li>
-<li><p><strong>directional derivative:</strong> yönlü türev</p></li>
-<li><p><strong>discriminative fine-tuning:</strong> ayrımcı hassas ayar</p></li>
-<li><p><strong>discriminative RBM:</strong> ayrımcı RBM</p></li>
-<li><p><strong>distributed representation:</strong> dağıtık gösterim</p></li>
-<li><p><strong>domain adaptation:</strong> alan uyarlama</p></li>
-<li><p><strong>dot product:</strong> iç çarpım</p></li>
-<li><p><strong>double backprop:</strong> çift geri yayılım</p></li>
-<li><p><strong>doubly block circulant matrix:</strong> çift bloklu dairesel matris</p></li>
-<li><p><strong>dream sleep:</strong> rüya uykusu</p></li>
-<li><p><strong>dropconnect:</strong> bağ sönümü</p></li>
-<li><p><strong>dropout:</strong> iletim sönümü</p></li>
-<li><p><strong>dynamic structure:</strong> dinamik yapı</p></li>
-</ul>
-</div>
-<div class="section" id="e">
-<h2><span class="section-number">1.5. </span>E<a class="headerlink" href="#e" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>e-step:</strong> e-adım</p></li>
-<li><p><strong>early stopping:</strong> erken durdurma</p></li>
-<li><p><strong>echo state network:</strong> yankı durum ağı</p></li>
-<li><p><strong>effective capacity:</strong> etkin kapasite</p></li>
-<li><p><strong>eigendecomposition:</strong> özayrışma</p></li>
-<li><p><strong>eigenvalue:</strong> özdeğer</p></li>
-<li><p><strong>eigenvector:</strong> özvektör</p></li>
-<li><p><strong>elementwise product:</strong> eleman çarpımı</p></li>
-<li><p><strong>embedding:</strong> gömülme</p></li>
-<li><p><strong>empirical distribution:</strong> deneysel dağılım</p></li>
-<li><p><strong>emprical risk:</strong> deneysel risk</p></li>
-<li><p><strong>emprical risk minimization:</strong> deneysel risk enküçültmesi</p></li>
-<li><p><strong>encoder:</strong> kodlayıcı</p></li>
-<li><p><strong>energy function:</strong> enerji fonksiyonu</p></li>
-<li><p><strong>energy-based model:</strong> enerji tabanlı model</p></li>
-<li><p><strong>enhanced gradient:</strong> gelişmiş gradyan</p></li>
-<li><p><strong>ensemble methods:</strong> topluluk yöntemleri</p></li>
-<li><p><strong>epoch:</strong> epok</p></li>
-<li><p><strong>equality constraint:</strong> eşitlik kısıtı</p></li>
-<li><p><strong>equivariance:</strong> eşit değişirlik</p></li>
-<li><p><strong>error function:</strong> hata fonksiyonu</p></li>
-<li><p><strong>estimation:</strong> kestirim</p></li>
-<li><p><strong>Euclidean norm:</strong> Euclid normu</p></li>
-<li><p><strong>Euclidean space:</strong> Euclid uzayı</p></li>
-<li><p><strong>Euler-Lagrange equation:</strong> Euler-Lagrange eşitliği</p></li>
-<li><p><strong>evidence lower bound:</strong> kanıt alt sınırı</p></li>
-<li><p><strong>example:</strong> örnek</p></li>
-<li><p><strong>expectation:</strong> beklenti</p></li>
-<li><p><strong>expectation maximization:</strong> beklenti enbüyütme</p></li>
-<li><p><strong>expected value:</strong> beklenti değeri</p></li>
-<li><p><strong>explaining away:</strong> savuşturma</p></li>
-<li><p><strong>exploitation:</strong> faydalanma</p></li>
-<li><p><strong>exploration:</strong> keşif</p></li>
-<li><p><strong>exponential:</strong> üstel</p></li>
-<li><p><strong>exponential distribution:</strong> üstel dağılım</p></li>
-</ul>
-</div>
-<div class="section" id="f">
-<h2><span class="section-number">1.6. </span>F<a class="headerlink" href="#f" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>f-score:</strong> f-skor</p></li>
-<li><p><strong>factorial:</strong> çarpınım</p></li>
-<li><p><strong>factor:</strong> faktör</p></li>
-<li><p><strong>factor analysis:</strong> faktör analizi</p></li>
-<li><p><strong>factor graph:</strong> faktörler çizgesi</p></li>
-<li><p><strong>factors of variation:</strong> değişirlik faktörleri</p></li>
-<li><p><strong>feature:</strong> öznitelik</p></li>
-<li><p><strong>feature selection:</strong> öznitelik seçme</p></li>
-<li><p><strong>feedforward neural network:</strong> ileri beslemeli sinir ağı</p></li>
-<li><p><strong>fine-tuning:</strong> hassas ayar</p></li>
-<li><p><strong>finite differences:</strong> sonlu farklar</p></li>
-<li><p><strong>forget gate:</strong> unutma kapısı</p></li>
-<li><p><strong>forward propagation:</strong> ileri yayılım</p></li>
-<li><p><strong>Fourier transform:</strong> Fourier dönüşümü</p></li>
-<li><p><strong>foveation:</strong> foveasyon</p></li>
-<li><p><strong>free energy:</strong> serbest enerji</p></li>
-<li><p><strong>frequency:</strong> frekans</p></li>
-<li><p><strong>frequentist probability:</strong> deneysel olasılık</p></li>
-<li><p><strong>frequentist statistics:</strong> deneysel istatistik</p></li>
-<li><p><strong>Frobenius norm:</strong> Frobenius normu</p></li>
-<li><p><strong>fully visible Bayes network:</strong> tamamen görünür Bayes ağı</p></li>
-<li><p><strong>function:</strong> fonksiyon</p></li>
-<li><p><strong>functional derivatives:</strong> fonksiyonel türevler</p></li>
-</ul>
-</div>
-<div class="section" id="g">
-<h2><span class="section-number">1.7. </span>G<a class="headerlink" href="#g" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>Gabor function:</strong> Gabor fonksiyonu</p></li>
-<li><p><strong>gated recurrent unit:</strong> kapılı yinelemeli ünite</p></li>
-<li><p><strong>Gaussian distribution:</strong> Gauss dağılımı</p></li>
-<li><p><strong>Gaussian kernel:</strong> Gauss kerneli</p></li>
-<li><p><strong>Gaussian mixture:</strong> Gauss karışımı</p></li>
-<li><p><strong>generalization:</strong> genelleştirme</p></li>
-<li><p><strong>generalized Lagrange function:</strong> genelleştirilmiş Lagrange
-fonksiyonu</p></li>
-<li><p><strong>generalized lagrange:</strong> genelleştirilmiş Lagrange</p></li>
-<li><p><strong>generative adversarial networks:</strong> üretken çekişmeli ağlar</p></li>
-<li><p><strong>generative moment matching networks:</strong> üretken moment eşleyen ağlar</p></li>
-<li><p><strong>generator network:</strong> üretici ağ</p></li>
-<li><p><strong>Gibbs distribution:</strong> Gibbs dağılımı</p></li>
-<li><p><strong>Gibbs sampling:</strong> Gibbs örneklemesi</p></li>
-<li><p><strong>global contrast normalization:</strong> global karşıt normalleştirme</p></li>
-<li><p><strong>GPU:</strong> grafik işlem birimi</p></li>
-<li><p><strong>gradient:</strong> gradyan</p></li>
-<li><p><strong>gradient clipping:</strong> gradyan kırpma</p></li>
-<li><p><strong>gradient ascent:</strong> gradyan çıkışı</p></li>
-<li><p><strong>gradient descent:</strong> gradyan inişi</p></li>
-<li><p><strong>graph:</strong> çizge</p></li>
-<li><p><strong>graph embedding:</strong> çizge gömülmesi</p></li>
-<li><p><strong>graphical model:</strong> çizgesel model</p></li>
-<li><p><strong>graphics processing unit:</strong> grafik işleme birimi</p></li>
-<li><p><strong>graph theory:</strong> çizge kuramı</p></li>
-<li><p><strong>greedy algorithm:</strong> hırslı algoritma</p></li>
-<li><p><strong>greedy layer-wise unsupervised pretraining:</strong> katmanların
-denetimsiz hırslı öneğitilmesi</p></li>
-<li><p><strong>greedy supervised pretraining:</strong> hırslı denetimli öneğitme</p></li>
-<li><p><strong>grid search:</strong> ızgara arama</p></li>
-</ul>
-</div>
-<div class="section" id="h">
-<h2><span class="section-number">1.8. </span>H<a class="headerlink" href="#h" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>Hadamard product:</strong> Hadamard çarpımı</p></li>
-<li><p><strong>harmonium:</strong> harmonyum</p></li>
-<li><p><strong>harmony theory:</strong> harmoni kuramı</p></li>
-<li><p><strong>Helmholtz free energy:</strong> Helmholtz serbest enerjisi</p></li>
-<li><p><strong>Hessian matrix:</strong> Hesse matrisi</p></li>
-<li><p><strong>heteroscedastic:</strong> ayrı varyanslı</p></li>
-<li><p><strong>hidden layer:</strong> gizli katman</p></li>
-<li><p><strong>hidden unit:</strong> gizli birim</p></li>
-<li><p><strong>hill climbing:</strong> tepe tırmanışı</p></li>
-<li><p><strong>hyperparameter optimization:</strong> hiperparametre eniyilemesi</p></li>
-<li><p><strong>hyperparameters:</strong> hiperparametreler</p></li>
-<li><p><strong>hypothesis space:</strong> hipotez uzayı</p></li>
-</ul>
-</div>
-<div class="section" id="i">
-<h2><span class="section-number">1.9. </span>I<a class="headerlink" href="#i" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>i.i.d. assumptions:</strong> i.i.d. varsayımları</p></li>
-<li><p><strong>identity matrix:</strong> birim matris</p></li>
-<li><p><strong>image:</strong> görüntü</p></li>
-<li><p><strong>ImageNet Large Scale Visual Recognition Challange:</strong> ImageNet Geniş
-Ölçekli Tanıma Yarışması</p></li>
-<li><p><strong>immorality:</strong> aykırılık</p></li>
-<li><p><strong>implementation:</strong> gerçekleştirme</p></li>
-<li><p><strong>importance sampling:</strong> önem örnekleme</p></li>
-<li><p><strong>importance weighted autoencoder:</strong> önem ağırlıklı otokodlayıcı</p></li>
-<li><p><strong>independence:</strong> bağımsızlık</p></li>
-<li><p><strong>independent and identically distributed:</strong> bağımsız özdeşçe
-dağılmış</p></li>
-<li><p><strong>independent component analysis:</strong> bağımsız bileşenler analizi</p></li>
-<li><p><strong>independent subspace analysis:</strong> bağımsız altuzaylar analizi</p></li>
-<li><p><strong>inequality constraint:</strong> eşitsizlik kısıtı</p></li>
-<li><p><strong>inference:</strong> çıkarım, çıkarsama</p></li>
-<li><p><strong>intercept:</strong> kesim noktası</p></li>
-<li><p><strong>inferotemporal cortex:</strong> şakak altı korteksi</p></li>
-<li><p><strong>information retrieval:</strong> bilgi getirimi</p></li>
-<li><p><strong>initialization:</strong> ilk değer atama</p></li>
-<li><p><strong>interpolate:</strong> ara-değeri bulmak</p></li>
-<li><p><strong>intractable:</strong> kolay çözümlenemez</p></li>
-<li><p><strong>invariance:</strong> değişmezlik</p></li>
-<li><p><strong>isotropic:</strong> izotrop</p></li>
-</ul>
-</div>
-<div class="section" id="j">
-<h2><span class="section-number">1.10. </span>J<a class="headerlink" href="#j" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>Jacobian matrix:</strong> Jacob matrisi</p></li>
-<li><p><strong>joint probability:</strong> ortak olasılık</p></li>
-</ul>
-</div>
-<div class="section" id="k">
-<h2><span class="section-number">1.11. </span>K<a class="headerlink" href="#k" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>k-means:</strong> k-ortalama</p></li>
-<li><p><strong>k-nearest neighbor:</strong> k-en yakın komşu</p></li>
-<li><p><strong>Karush-Kuhn-Tucker conditions:</strong> Karush-Kuhn-Tucker koşulları</p></li>
-<li><p><strong>kernel machine:</strong> kernel makinesi</p></li>
-<li><p><strong>kernel trick:</strong> kernel hilesi</p></li>
-<li><p><strong>KKT conditions:</strong> KKT koşulları</p></li>
-<li><p><strong>KL divergence:</strong> KL ıraksaması</p></li>
-<li><p><strong>knowledge base:</strong> işlenmiş bilgi tabanı</p></li>
-<li><p><strong>Krylov methods:</strong> Krylov yöntemleri</p></li>
-<li><p><strong>Kullback-Leibler divergence:</strong> Kullback-Leibler ıraksaması</p></li>
-</ul>
-</div>
-<div class="section" id="l">
-<h2><span class="section-number">1.12. </span>L<a class="headerlink" href="#l" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>label:</strong> etiket</p></li>
-<li><p><strong>label smoothing:</strong> etiket düzleştirme</p></li>
-<li><p><strong>ladder network:</strong> basamaklı ağ</p></li>
-<li><p><strong>Lagrange multipliers:</strong> Lagrange çarpanları</p></li>
-<li><p><strong>Lagrangian:</strong> Lagrange fonksiyonu</p></li>
-<li><p><strong>laplace distribution:</strong> Laplace dağılımı</p></li>
-<li><p><strong>latent:</strong> saklı</p></li>
-<li><p><strong>latent variable:</strong> saklı değişken</p></li>
-<li><p><strong>layer:</strong> katman</p></li>
-<li><p><strong>leaky ReLU:</strong> sızıntılı ReLU</p></li>
-<li><p><strong>leaky units:</strong> sızıntılı birimler</p></li>
-<li><p><strong>learnin grate:</strong> öğrenme oranı</p></li>
-<li><p><strong>likelihood:</strong> olabilirlik</p></li>
-<li><p><strong>line search:</strong> doğru üzerinde arama</p></li>
-<li><p><strong>linear combination:</strong> doğrusal bileşim</p></li>
-<li><p><strong>linear dependence:</strong> doğrusal bağımlılık</p></li>
-<li><p><strong>linear factor model:</strong> doğrusal faktör modeli</p></li>
-<li><p><strong>linear regression:</strong> doğrusal bağlanım</p></li>
-<li><p><strong>link prediction:</strong> bağlantı öngörüsü</p></li>
-<li><p><strong>Lipschitz constant:</strong> Lipschitz sabiti</p></li>
-<li><p><strong>Lipschitz continuous:</strong> Lipschitz süreklisi</p></li>
-<li><p><strong>liquid state machine:</strong> Likit durum makinesi</p></li>
-<li><p><strong>local conditional probability distribution:</strong> yerel koşullu
-olasılık dağılımı</p></li>
-<li><p><strong>local contrast normalization:</strong> yerel karşıtlık normalleştirmesi</p></li>
-<li><p><strong>logistic regression:</strong> lojistik bağlanım</p></li>
-<li><p><strong>Logistic regression:</strong> Lojistik bağlanım</p></li>
-<li><p><strong>logistic sigmoid:</strong> lojistik sigmoid</p></li>
-<li><p><strong>long short-term memory:</strong> uzun ömürlü kısa-dönem belleği</p></li>
-<li><p><strong>look-up table:</strong> başvuru çizelgesi</p></li>
-<li><p><strong>loop:</strong> döngü</p></li>
-<li><p><strong>loopy belief propagation:</strong> döngüsel inanç yayılımı</p></li>
-<li><p><strong>loss function:</strong> kayıp fonksiyonu</p></li>
-</ul>
-</div>
-<div class="section" id="m">
-<h2><span class="section-number">1.13. </span>M<a class="headerlink" href="#m" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>m-step:</strong> m-adım</p></li>
-<li><p><strong>machine learning:</strong> yapay öğrenme</p></li>
-<li><p><strong>machine translation:</strong> makine tercümesi</p></li>
-<li><p><strong>main diagonal:</strong> ana köşegen</p></li>
-<li><p><strong>manifold hypothesis:</strong> manifold hipotezi</p></li>
-<li><p><strong>manifold learning:</strong> manifold öğrenme</p></li>
-<li><p><strong>manifold tangent classifier:</strong> manifold tanjant sınıflandırıcısı</p></li>
-<li><p><strong>MAP approximation:</strong> MAP yaklaştırması</p></li>
-<li><p><strong>marginal probability:</strong> marjinal olasılık</p></li>
-<li><p><strong>Markov chain:</strong> Markov zinciri</p></li>
-<li><p><strong>Markov chain Monte Carlo:</strong> Markov zincirli Monte Carlo</p></li>
-<li><p><strong>Markov network:</strong> Markov ağı</p></li>
-<li><p><strong>Markov random field:</strong> Markov rastgele alanı</p></li>
-<li><p><strong>matrix:</strong> matris</p></li>
-<li><p><strong>matrix inverse:</strong> matris tersi</p></li>
-<li><p><strong>matrix product:</strong> matris çarpımı</p></li>
-<li><p><strong>max norm:</strong> en büyük norm</p></li>
-<li><p><strong>max pooling:</strong> en büyükleri biriktirme</p></li>
-<li><p><strong>maximize:</strong> enbüyütme</p></li>
-<li><p><strong>maximum aposteriori:</strong> en büyük ardıl</p></li>
-<li><p><strong>maximum likelihood:</strong> en büyük olabilirlik</p></li>
-<li><p><strong>maxout:</strong> büyük-çıktı</p></li>
-<li><p><strong>mean field:</strong> orta alan</p></li>
-<li><p><strong>mean squared error:</strong> ortalama karesel hata</p></li>
-<li><p><strong>measure theory:</strong> ölçme kuramı</p></li>
-<li><p><strong>measure zero:</strong> sıfır ölçüm</p></li>
-<li><p><strong>medial temporal lobe:</strong> orta şakak lobu</p></li>
-<li><p><strong>memory network:</strong> bellek ağı</p></li>
-<li><p><strong>method of steepest descent:</strong> en dik iniş yöntemi</p></li>
-<li><p><strong>minibatch:</strong> miniyığın</p></li>
-<li><p><strong>minimize:</strong> enküçültme</p></li>
-<li><p><strong>missing inputs:</strong> eksik girdiler</p></li>
-<li><p><strong>mixing:</strong> karıştırma</p></li>
-<li><p><strong>mixture density networks:</strong> karma yoğunluk ağları</p></li>
-<li><p><strong>mixture distribution:</strong> karma dağılım</p></li>
-<li><p><strong>mixture model:</strong> karma model</p></li>
-<li><p><strong>mixture of experts:</strong> uzman karması</p></li>
-<li><p><strong>model averaging:</strong> model ortalama</p></li>
-<li><p><strong>model compression:</strong> model sıkıştırması</p></li>
-<li><p><strong>model identifiability:</strong> model tanımlanabilirliği</p></li>
-<li><p><strong>model parallelism:</strong> model benzeşmesi</p></li>
-<li><p><strong>moment matching:</strong> moment eşleştirme</p></li>
-<li><p><strong>Moore-Penrose pseudoinverse:</strong> Moore-Penrose tersimsisi</p></li>
-<li><p><strong>moralized graph:</strong> düzeltilmiş çizge</p></li>
-<li><p><strong>multi-modal learning:</strong> çok-doruklu öğrenme</p></li>
-<li><p><strong>multi-prediction DBM:</strong> çok-öngörülü DBM</p></li>
-<li><p><strong>multi-task learning:</strong> çoklu-görev öğrenme</p></li>
-<li><p><strong>multilayer perception:</strong> çok katmanlı algılama</p></li>
-<li><p><strong>multilayer perceptron:</strong> çok katmanlı perseptron</p></li>
-<li><p><strong>multinomial distribution:</strong> çok terimli dağılım</p></li>
-<li><p><strong>multinoulli distribution:</strong> çoklu Bernoulli dağılımı</p></li>
-</ul>
-</div>
-<div class="section" id="n">
-<h2><span class="section-number">1.14. </span>N<a class="headerlink" href="#n" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>naive Bayes:</strong> naif Bayes</p></li>
-<li><p><strong>natural image:</strong> doğal görüntü</p></li>
-<li><p><strong>natural language processing:</strong> doğal dil işleme</p></li>
-<li><p><strong>nearest neighbor regression:</strong> en yakın komşu bağlanımı</p></li>
-<li><p><strong>negative definite:</strong> negatif tanımlı</p></li>
-<li><p><strong>negative phase:</strong> negatif faz</p></li>
-<li><p><strong>Nesterov momentum:</strong> Nesterov momentumu</p></li>
-<li><p><strong>Netflix Grand Prize:</strong> Netflix Büyük Ödülü</p></li>
-<li><p><strong>neural language model:</strong> sinirsel dil modeli</p></li>
-<li><p><strong>neural network:</strong> sinir ağı</p></li>
-<li><p><strong>neural turing machine:</strong> sinirsel Turing Makinesi</p></li>
-<li><p><strong>neural machine translation:</strong> sinirsel makine çevirisi</p></li>
-<li><p><strong>neuroscience:</strong> sinirbilim</p></li>
-<li><p><strong>Newton’s method:</strong> Newton yöntemi</p></li>
-<li><p><strong>no free lunch theorem:</strong> ``bedaya yemek yok’’ teoremi</p></li>
-<li><p><strong>noise-contrastive estimation:</strong> gürültüye karşıt kestirim</p></li>
-<li><p><strong>nonlinear:</strong> eğrisel</p></li>
-<li><p><strong>nonlinearity:</strong> eğrisellik</p></li>
-<li><p><strong>nonparametric model:</strong> parametrik olmayan model</p></li>
-<li><p><strong>normal distribution:</strong> normal dağılım</p></li>
-<li><p><strong>normal equations:</strong> normal denklemler</p></li>
-<li><p><strong>normalized initialization:</strong> normalleştirilmiş ilk değer atama</p></li>
-<li><p><strong>numerical differentiation:</strong> sayısal farklar</p></li>
-</ul>
-</div>
-<div class="section" id="o">
-<h2><span class="section-number">1.15. </span>O<a class="headerlink" href="#o" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>object detection:</strong> nesne saptama</p></li>
-<li><p><strong>object recognition:</strong> nesne tanıma</p></li>
-<li><p><strong>objective function:</strong> amaç fonksiyonu</p></li>
-<li><p><strong>one-hot representation:</strong> bir-elemanı-bir olan gösterim</p></li>
-<li><p><strong>one-hot vector:</strong> bir-elemanı-bir olan vektör</p></li>
-<li><p><strong>one-shot learning:</strong> tek seferde öğrenme</p></li>
-<li><p><strong>operation:</strong> işlem</p></li>
-<li><p><strong>optimization:</strong> eniyileme</p></li>
-<li><p><strong>orthodox statistics:</strong> Ortodoks istatistiği</p></li>
-<li><p><strong>orthogonal matching pursuit:</strong> ortogonal eşleştirme takibi</p></li>
-<li><p><strong>orthogonal matrix:</strong> ortogonal matris</p></li>
-<li><p><strong>orthogonality:</strong> ortogonallik</p></li>
-<li><p><strong>output layer:</strong> çıktı katmanı</p></li>
-</ul>
-</div>
-<div class="section" id="p">
-<h2><span class="section-number">1.16. </span>P<a class="headerlink" href="#p" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>padding:</strong> doldurma</p></li>
-<li><p><strong>parallel distributed processing:</strong> paralel dağıtık işleme</p></li>
-<li><p><strong>parameter initialization:</strong> parametrelere ilk değer ataması</p></li>
-<li><p><strong>parameter sharing:</strong> parametre paylaşımı</p></li>
-<li><p><strong>parameter tying:</strong> parametre eşleme</p></li>
-<li><p><strong>parametric model:</strong> parametrik model</p></li>
-<li><p><strong>parametric ReLU:</strong> parametrik ReLU</p></li>
-<li><p><strong>parent:</strong> üst</p></li>
-<li><p><strong>parsing:</strong> Sözdizimsel ayrıştırma</p></li>
-<li><p><strong>partial derivative:</strong> kısmi türev</p></li>
-<li><p><strong>partition function:</strong> bölüntü fonksiyonu</p></li>
-<li><p><strong>perceptron:</strong> perseptron</p></li>
-<li><p><strong>persistent contrastive divergence:</strong> kalıcı karşıtsal ıraksama</p></li>
-<li><p><strong>perturbation analysis:</strong> pertürbasyon analizi</p></li>
-<li><p><strong>point estimator:</strong> nokta kestiricisi</p></li>
-<li><p><strong>policy:</strong> politika</p></li>
-<li><p><strong>pooling:</strong> biriktirme</p></li>
-<li><p><strong>positive definite:</strong> pozitif tanımlı</p></li>
-<li><p><strong>positive phase:</strong> pozitif faz</p></li>
-<li><p><strong>posterior:</strong> ardıl</p></li>
-<li><p><strong>posterior probability:</strong> ardıl olasılık</p></li>
-<li><p><strong>posterior distribution:</strong> ardıl dağılım</p></li>
-<li><p><strong>precision:</strong> kesinlik</p></li>
-<li><p><strong>predictive sparse decomposition:</strong> öngörüsel seyrek ayrışım</p></li>
-<li><p><strong>preprocessing:</strong> önişleme</p></li>
-<li><p><strong>presentation:</strong> sunum</p></li>
-<li><p><strong>pretraining:</strong> öneğitme</p></li>
-<li><p><strong>primary visual cortex:</strong> birincil görsel korteks</p></li>
-<li><p><strong>principal component analysis:</strong> ana bileşenler analizi</p></li>
-<li><p><strong>prior:</strong> öncül</p></li>
-<li><p><strong>prior probability:</strong> öncül olasılık</p></li>
-<li><p><strong>prior probability distribution:</strong> öncül olasılık dağılımı</p></li>
-<li><p><strong>probabilistic PCA:</strong> olasılıksal PCA</p></li>
-<li><p><strong>probabilistic model:</strong> olasılıksal model</p></li>
-<li><p><strong>probability density function:</strong> olasılık yoğunluk fonksiyonu</p></li>
-<li><p><strong>probability distribution:</strong> olasılık dağılımı</p></li>
-<li><p><strong>probability mass function:</strong> olasılık kütle fonksiyonu</p></li>
-<li><p><strong>probability mass function estimation:</strong> olasılık kütle fonksiyonu
-kestirimi</p></li>
-<li><p><strong>product of experts:</strong> uzman çarpımı</p></li>
-<li><p><strong>product rule of probability:</strong> olasılığın çarpım kuralı</p></li>
-<li><p><strong>pseudolikelihood:</strong> yarı benzerlik</p></li>
-</ul>
-</div>
-<div class="section" id="q">
-<h2><span class="section-number">1.17. </span>Q<a class="headerlink" href="#q" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>quadrature pair:</strong> dört evreli çift</p></li>
-<li><p><strong>quasi-Newton methods:</strong> Newton-vari yöntemler</p></li>
-</ul>
-</div>
-<div class="section" id="r">
-<h2><span class="section-number">1.18. </span>R<a class="headerlink" href="#r" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>radial basis function:</strong> dairesel baz fonksiyonu</p></li>
-<li><p><strong>random search:</strong> rastgele arama</p></li>
-<li><p><strong>random variable:</strong> rastgele değişken</p></li>
-<li><p><strong>ratio matching:</strong> oran eşleştirme</p></li>
-<li><p><strong>recall:</strong> duyarlılık</p></li>
-<li><p><strong>receptive field:</strong> alım alanı</p></li>
-<li><p><strong>recommender systems:</strong> önerici sistemler</p></li>
-<li><p><strong>rectified linear unit:</strong> düzeltilmiş doğrusal birim</p></li>
-<li><p><strong>recurrent network:</strong> yinelemeli ağ</p></li>
-<li><p><strong>recurrent neural network:</strong> yinelemeli sinir ağı</p></li>
-<li><p><strong>regression:</strong> bağlanım</p></li>
-<li><p><strong>regularization:</strong> düzenlileştirme</p></li>
-<li><p><strong>regularizer:</strong> düzenlileştirici</p></li>
-<li><p><strong>reinforcement learning:</strong> pekiştirmeli öğrenme</p></li>
-<li><p><strong>relational database:</strong> ilişkisel veritabanı</p></li>
-<li><p><strong>relations:</strong> bağıntılar</p></li>
-<li><p><strong>reparametrization trick:</strong> yeniden parametreleştirme hilesi</p></li>
-<li><p><strong>representation:</strong> gösterim</p></li>
-<li><p><strong>representation learning:</strong> gösterim öğrenme</p></li>
-<li><p><strong>representational capacity:</strong> gösterimsel kapasite</p></li>
-<li><p><strong>restricted Boltzmann machine:</strong> kısıtlandırılmış Boltzmann makinesi</p></li>
-<li><p><strong>Ridge regression:</strong> Ridge bağlanımı</p></li>
-</ul>
-</div>
-<div class="section" id="s">
-<h2><span class="section-number">1.19. </span>S<a class="headerlink" href="#s" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>saddle points:</strong> eyer noktaları</p></li>
-<li><p><strong>sample mean:</strong> örnekleme ortalaması</p></li>
-<li><p><strong>scalar:</strong> skaler</p></li>
-<li><p><strong>score matching:</strong> skor eşleştirme</p></li>
-<li><p><strong>second derivative:</strong> ikinci türev</p></li>
-<li><p><strong>second derivative test:</strong> ikinci türev testi</p></li>
-<li><p><strong>self-information:</strong> özbilgi</p></li>
-<li><p><strong>semantic hashing:</strong> anlamsal adresleme</p></li>
-<li><p><strong>semi-supervised learning:</strong> yarı denetimli öğrenme</p></li>
-<li><p><strong>separable convolution:</strong> ayrılabilir evrişim</p></li>
-<li><p><strong>separation:</strong> ayırma</p></li>
-<li><p><strong>sequence:</strong> sıra (sıralı dizi)</p></li>
-<li><p><strong>set:</strong> küme</p></li>
-<li><p><strong>Shannon entropy:</strong> Shannon entropisi</p></li>
-<li><p><strong>sigmoid belief network:</strong> sigmoid inanç ağı</p></li>
-<li><p><strong>simple cell:</strong> yalın hücre</p></li>
-<li><p><strong>simultaneous:</strong> eşzamanlı</p></li>
-<li><p><strong>singular value:</strong> tekil değer</p></li>
-<li><p><strong>singular value decomposition:</strong> tekil değer ayrışımı</p></li>
-<li><p><strong>singular vector:</strong> tekil vektör</p></li>
-<li><p><strong>slow feature analysis:</strong> yavaş öznitelik analizi</p></li>
-<li><p><strong>smoothness:</strong> pürüzsüzlük</p></li>
-<li><p><strong>spam detection:</strong> spam saptama</p></li>
-<li><p><strong>sparse coding:</strong> seyrek kodlama</p></li>
-<li><p><strong>spike and slab sparse coding:</strong> sivri ve kalın seyrek kodlama</p></li>
-<li><p><strong>sparse initialization:</strong> seyrek ilk değer atama</p></li>
-<li><p><strong>sparse representation:</strong> seyrek gösterim</p></li>
-<li><p><strong>spectral radius:</strong> spektral yarıçap</p></li>
-<li><p><strong>speech recognition:</strong> konuşma tanıma</p></li>
-<li><p><strong>sphering:</strong> küre şeklini verme</p></li>
-<li><p><strong>square matrix:</strong> kare matris</p></li>
-<li><p><strong>standard deviation:</strong> standart sapma</p></li>
-<li><p><strong>standard error:</strong> standart hata</p></li>
-<li><p><strong>standard error of the mean:</strong> ortalamanın standart hatası</p></li>
-<li><p><strong>statistic:</strong> istatistik</p></li>
-<li><p><strong>statistical learning theory:</strong> istatiksel öğrenme kuramı</p></li>
-<li><p><strong>steepest descent:</strong> en dik iniş yöntemi</p></li>
-<li><p><strong>stochastic back-propagation:</strong> stokastik geri yayılım</p></li>
-<li><p><strong>stochastic gradient ascent:</strong> stokastik gradyan çıkışı</p></li>
-<li><p><strong>stochastic gradient descent:</strong> stokastik gradyan inişi</p></li>
-<li><p><strong>stochastic maximum likelihood:</strong> stokastik en büyük olabilirlik</p></li>
-<li><p><strong>stochastic pooling:</strong> stokastik biriktirme</p></li>
-<li><p><strong>structure learning:</strong> yapısal öğrenme</p></li>
-<li><p><strong>structured output:</strong> yapılandırılmış çıktı</p></li>
-<li><p><strong>structured probabilistic model:</strong> yapılandırılmış olasılık modeli</p></li>
-<li><p><strong>sum rule of probability:</strong> olasılığın toplam kuralı</p></li>
-<li><p><strong>sum product network:</strong> toplam-çarpım ağı</p></li>
-<li><p><strong>supervised:</strong> denetimli</p></li>
-<li><p><strong>supervised fine-tuning:</strong> denetimli hassas ayar</p></li>
-<li><p><strong>supervised learning:</strong> denetimli öğrenme</p></li>
-<li><p><strong>support vector machine:</strong> destek vektör makinesi</p></li>
-<li><p><strong>surrogate loss function:</strong> vekil kayıp fonksiyonu</p></li>
-<li><p><strong>symmetric matrix:</strong> simetrik matris</p></li>
-<li><p><strong>synchronize:</strong> senkron</p></li>
-</ul>
-</div>
-<div class="section" id="t">
-<h2><span class="section-number">1.20. </span>T<a class="headerlink" href="#t" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>tangent distance:</strong> tanjant mesafesi</p></li>
-<li><p><strong>tangent plane:</strong> tanjant düzlemi</p></li>
-<li><p><strong>tangent prop:</strong> tanjant yayılımı</p></li>
-<li><p><strong>teacher forcing:</strong> öğretmen zoru</p></li>
-<li><p><strong>tempering:</strong> kızdırma</p></li>
-<li><p><strong>template matching:</strong> şablon eşleştirme</p></li>
-<li><p><strong>tensor:</strong> tensör</p></li>
-<li><p><strong>test set:</strong> test kümesi</p></li>
-<li><p><strong>Tikhonov regularization:</strong> Tikhonov düzenlileştirmesi</p></li>
-<li><p><strong>tiled convolution:</strong> döşeli evrişim</p></li>
-<li><p><strong>time-delay neural network:</strong> zaman-gecikmeli sinir ağı</p></li>
-<li><p><strong>Toeplitz matrix:</strong> Toeplitz matrisi</p></li>
-<li><p><strong>topographic ICA:</strong> topografik ICA</p></li>
-<li><p><strong>trace operator:</strong> iz operatörü</p></li>
-<li><p><strong>tractable:</strong> kolay çözümlenebilir</p></li>
-<li><p><strong>training:</strong> eğitme</p></li>
-<li><p><strong>training error:</strong> eğitim hatası</p></li>
-<li><p><strong>transcription:</strong> transkripsiyon</p></li>
-<li><p><strong>transfer learning:</strong> aktarım öğrenme</p></li>
-<li><p><strong>transpose:</strong> transpoz</p></li>
-<li><p><strong>triangle inequality:</strong> üçgen eşitsizliği</p></li>
-<li><p><strong>triangulated graph:</strong> üçgenlemeli çizge</p></li>
-<li><p><strong>tuple:</strong> çokuzlu</p></li>
-</ul>
-</div>
-<div class="section" id="u">
-<h2><span class="section-number">1.21. </span>U<a class="headerlink" href="#u" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>unbiased:</strong> önyargısız</p></li>
-<li><p><strong>underdetermined:</strong> eksik belirtilmiş</p></li>
-<li><p><strong>underflow:</strong> küçümenlik</p></li>
-<li><p><strong>undirected graphical model:</strong> yönsüz çizgesel model</p></li>
-<li><p><strong>undirected model:</strong> yönsüz model</p></li>
-<li><p><strong>uniform distribution:</strong> düzgün dağılım</p></li>
-<li><p><strong>unit norm:</strong> birim norm</p></li>
-<li><p><strong>unit vector:</strong> birim vektör</p></li>
-<li><p><strong>universal approximation theorem:</strong> evrensel yaklaşıklık teoremi</p></li>
-<li><p><strong>universal approximator:</strong> evrensel yakınlaştırıcı</p></li>
-<li><p><strong>unnormalized probability distribution:</strong> normalleştirilmemiş
-olasılık dağılımı</p></li>
-<li><p><strong>unpooling:</strong> dağıtım</p></li>
-<li><p><strong>unsupervised learning:</strong> denetimsiz öğrenme</p></li>
-<li><p><strong>unsupervised pretraining:</strong> denetimsiz öneğitme</p></li>
-</ul>
-</div>
-<div class="section" id="v">
-<h2><span class="section-number">1.22. </span>V<a class="headerlink" href="#v" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>v-structure:</strong> v-yapısı</p></li>
-<li><p><strong>Vapnik-Chervonenkis dimension:</strong> Vapnik-Chervonenkis boyutu</p></li>
-<li><p><strong>variable:</strong> değişken</p></li>
-<li><p><strong>variance:</strong> değişirlik</p></li>
-<li><p><strong>variational:</strong> değişimsel</p></li>
-<li><p><strong>variational autoencoder:</strong> değişimsel otokodlayıcı</p></li>
-<li><p><strong>variational derivatives:</strong> değişken türevler</p></li>
-<li><p><strong>variational free energy:</strong> değişken serbest enerji</p></li>
-<li><p><strong>variational inference:</strong> değişimsel çıkarım</p></li>
-<li><p><strong>VC dimension:</strong> VC boyutu</p></li>
-<li><p><strong>vector:</strong> vektör</p></li>
-<li><p><strong>virtual adversarial examples:</strong> sanal çekişmeli örnekler</p></li>
-<li><p><strong>visible layer:</strong> görünür katman</p></li>
-<li><p><strong>visible variable:</strong> görünür değişken</p></li>
-<li><p><strong>volumetric data:</strong> hacimsel veri</p></li>
-</ul>
-</div>
-<div class="section" id="w">
-<h2><span class="section-number">1.23. </span>W<a class="headerlink" href="#w" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>Wake-Sleep:</strong> Uyandırma-Uyutma</p></li>
-<li><p><strong>weight decay:</strong> ağırlık azalımı</p></li>
-<li><p><strong>weight space symmetry:</strong> ağırlık uzayı simetrisi</p></li>
-<li><p><strong>whitening:</strong> beyazlaştırma</p></li>
-<li><p><strong>word embedding:</strong> kelime gömülmesi</p></li>
-</ul>
-</div>
-<div class="section" id="z">
-<h2><span class="section-number">1.24. </span>Z<a class="headerlink" href="#z" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>zero-data learning:</strong> verisiz öğrenme</p></li>
-<li><p><strong>zero-shot learning:</strong> verisiz öğrenme</p></li>
-</ul>
-</div>
-<div class="section" id="other">
-<h2><span class="section-number">1.25. </span>Other<a class="headerlink" href="#other" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>0-1 loss:</strong> 0-1 kayıp</p></li>
-</ul>
-</div>
-</div>
-
-
-        </div>
-        <div class="side-doc-outline">
-            <div class="side-doc-outline--content"> 
-<div class="localtoc">
-    <p class="caption">
-      <span class="caption-text">Table Of Contents</span>
-    </p>
-    <ul>
-<li><a class="reference internal" href="#">1. Sözlük</a><ul>
-<li><a class="reference internal" href="#a">1.1. A</a></li>
-<li><a class="reference internal" href="#b">1.2. B</a></li>
-<li><a class="reference internal" href="#c">1.3. C</a></li>
-<li><a class="reference internal" href="#d">1.4. D</a></li>
-<li><a class="reference internal" href="#e">1.5. E</a></li>
-<li><a class="reference internal" href="#f">1.6. F</a></li>
-<li><a class="reference internal" href="#g">1.7. G</a></li>
-<li><a class="reference internal" href="#h">1.8. H</a></li>
-<li><a class="reference internal" href="#i">1.9. I</a></li>
-<li><a class="reference internal" href="#j">1.10. J</a></li>
-<li><a class="reference internal" href="#k">1.11. K</a></li>
-<li><a class="reference internal" href="#l">1.12. L</a></li>
-<li><a class="reference internal" href="#m">1.13. M</a></li>
-<li><a class="reference internal" href="#n">1.14. N</a></li>
-<li><a class="reference internal" href="#o">1.15. O</a></li>
-<li><a class="reference internal" href="#p">1.16. P</a></li>
-<li><a class="reference internal" href="#q">1.17. Q</a></li>
-<li><a class="reference internal" href="#r">1.18. R</a></li>
-<li><a class="reference internal" href="#s">1.19. S</a></li>
-<li><a class="reference internal" href="#t">1.20. T</a></li>
-<li><a class="reference internal" href="#u">1.21. U</a></li>
-<li><a class="reference internal" href="#v">1.22. V</a></li>
-<li><a class="reference internal" href="#w">1.23. W</a></li>
-<li><a class="reference internal" href="#z">1.24. Z</a></li>
-<li><a class="reference internal" href="#other">1.25. Other</a></li>
-</ul>
-</li>
-</ul>
-
-</div>
-            </div>
-        </div>
-
-      <div class="clearer"></div>
-    </div><div class="pagenation">
-     <a id="button-prev" href="../index.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="P">
-         <i class="pagenation-arrow-L fas fa-arrow-left fa-lg"></i>
-         <div class="pagenation-text">
-            <span class="pagenation-direction">Previous</span>
-            <div>Yapay Öğrenme Sözlüğü</div>
-         </div>
-     </a>
-     <a id="button-next" href="biz_kimiz.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="N">
-         <i class="pagenation-arrow-R fas fa-arrow-right fa-lg"></i>
-        <div class="pagenation-text">
-            <span class="pagenation-direction">Next</span>
-            <div>2. Biz Kimiz?</div>
-        </div>
-     </a>
-  </div>
-        
-        </main>
+     <div class="page-content" role="main">
+      <div class="section" id="sozluk">
+       <h1>
+        <span class="section-number">
+         1.
+        </span>
+        Sözlük
+        <a class="headerlink" href="#sozluk" title="Permalink to this headline">
+         ¶
+        </a>
+       </h1>
+       <div class="section" id="a">
+        <h2>
+         <span class="section-number">
+          1.1.
+         </span>
+         A
+         <a class="headerlink" href="#a" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            absolute value verification:
+           </strong>
+           mutlak değer doğrulaması
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            accuracy:
+           </strong>
+           doğruluk
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            activation function:
+           </strong>
+           aktifleştirme fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            active constraint:
+           </strong>
+           aktif kısıt
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            adaptive linear element:
+           </strong>
+           uyarlanır doğrusal eleman
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            adversarial example:
+           </strong>
+           çekişmeli örnek
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            adversarial training:
+           </strong>
+           çekişmeli eğitme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            affine:
+           </strong>
+           ilgin
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            almost everywhere:
+           </strong>
+           hemen hemen her yerde
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            almost sure convergence:
+           </strong>
+           hemen hemen kesin yakınsama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            ancestral sampling:
+           </strong>
+           geçmiş örnekleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            annealed importance sampling:
+           </strong>
+           tavlı önem örnekleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            approximation:
+           </strong>
+           yaklaşıklık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            approximate bayesian computation:
+           </strong>
+           yaklaşık Bayes hesaplaması
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            approximate inference:
+           </strong>
+           yaklaşık çıkarım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            array:
+           </strong>
+           dizi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            artificial intelligence:
+           </strong>
+           yapay zeka
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            artificial neural network:
+           </strong>
+           yapay sinir ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            asymptotically unbiased:
+           </strong>
+           asimptotik önyargısız
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            asynchronize:
+           </strong>
+           asenkron
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            attribute:
+           </strong>
+           nitelik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            audio:
+           </strong>
+           ses
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            autoencoder:
+           </strong>
+           otokodlayıcı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            automatic speech recognition:
+           </strong>
+           konuşma tanıma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            autoregressive networks:
+           </strong>
+           otobağlayıcı ağlar
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="b">
+        <h2>
+         <span class="section-number">
+          1.2.
+         </span>
+         B
+         <a class="headerlink" href="#b" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            back-propagation:
+           </strong>
+           geri yayılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            back-propagation through time:
+           </strong>
+           zamanla geri yayılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            bag of words:
+           </strong>
+           sözcük çuvalı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            bagging:
+           </strong>
+           istifleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            batch:
+           </strong>
+           yığın
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            batch normalization:
+           </strong>
+           yığın normalleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Bayes error:
+           </strong>
+           Bayes hatası
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Bayes rule:
+           </strong>
+           Bayes kuralı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Bayesian hyperparameter optimization:
+           </strong>
+           Bayesçi hiperparametre
+eniyileme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Bayesian network:
+           </strong>
+           Bayes ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Bayesian probability:
+           </strong>
+           Bayes olasılığı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Bayesian statistics:
+           </strong>
+           Bayes istatistiği
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            belief network:
+           </strong>
+           inanç ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            benchmark:
+           </strong>
+           denek taşı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Bernoulli distribution:
+           </strong>
+           Bernoulli dağılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            bias:
+           </strong>
+           önyargı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            bias parameter:
+           </strong>
+           önyargı parametresi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            biased importance sampling:
+           </strong>
+           önyargılı önem örnekleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            binary relation:
+           </strong>
+           ikili bağıntı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            block gibbs sampling:
+           </strong>
+           blok Gibbs örnekleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            boltzmann distribution:
+           </strong>
+           Boltzmann dağılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            boltzmann machine:
+           </strong>
+           Boltzmann makinesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            broadcasting:
+           </strong>
+           yayımlama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            brute force:
+           </strong>
+           kaba kuvvet
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            burn in:
+           </strong>
+           alıştırma
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="c">
+        <h2>
+         <span class="section-number">
+          1.3.
+         </span>
+         C
+         <a class="headerlink" href="#c" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            calculus:
+           </strong>
+           analiz
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            calculus of variations:
+           </strong>
+           değişim analizi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            cascade:
+           </strong>
+           aşamalı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            categorical distribution:
+           </strong>
+           kategorik dağılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            centering trick:
+           </strong>
+           ortalama hilesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            central limit theorem:
+           </strong>
+           merkezi limit teoremi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            chain rule:
+           </strong>
+           zincir kuralı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            chain rule of productivity:
+           </strong>
+           olasılığın zincir kuralı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            chess:
+           </strong>
+           satranç
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            chord:
+           </strong>
+           kiriş
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            chordal graph:
+           </strong>
+           kirişli çizge
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            class-based language models:
+           </strong>
+           sınıf tabanlı dil modelleri
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            classical dynamic system:
+           </strong>
+           klasik dinamik sistem
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            classification:
+           </strong>
+           sınıflandırma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            clique:
+           </strong>
+           klik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            clique potential:
+           </strong>
+           klik potansiyeli
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            collaborative filtering:
+           </strong>
+           dayanışmalı filtreleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            collider:
+           </strong>
+           çarpıştırıcı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            color images:
+           </strong>
+           renkli görüntüler
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            complex cell:
+           </strong>
+           karmaşık hücre
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            computational graph:
+           </strong>
+           hesaplamalı çizge
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            computer vision:
+           </strong>
+           bilgisayarlı görü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            concept drift:
+           </strong>
+           kavram sapması
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            condition number:
+           </strong>
+           matrisin sağlamlık sayısı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            conditional computation:
+           </strong>
+           koşullu hesaplama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            conditional independence:
+           </strong>
+           koşullu bağımsızlık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            conditional probability:
+           </strong>
+           koşullu olasılık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            conditional RBM:
+           </strong>
+           koşullu RBM
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            connectionism:
+           </strong>
+           bağlantıcılık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            connectionist temporal classification:
+           </strong>
+           bağlantıcı zamansal
+sınıflandırma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            consistency:
+           </strong>
+           tutarlılık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            constancy:
+           </strong>
+           sabitlik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            constrained optimization:
+           </strong>
+           kısıtlı eniyileme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            content-based addressing:
+           </strong>
+           içerik-tabanlı adresleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            content-based recommender systems:
+           </strong>
+           içerik-tabanlı öneri
+sistemleri
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            context:
+           </strong>
+           bağlam
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            context specific independence:
+           </strong>
+           bağlama özgü bağımsızlık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            contextual bandits:
+           </strong>
+           bağlamsal yol kesmeler
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            continuation methods:
+           </strong>
+           sürdürme yöntemleri
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            continuous:
+           </strong>
+           sürekli
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            contractive autoencoder:
+           </strong>
+           daraltan otokodlayıcı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            contrast:
+           </strong>
+           karşıtlık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            contrastive divergence:
+           </strong>
+           karşıtsal ıraksama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            convex optimization:
+           </strong>
+           dışbükey eniyileme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            convolution:
+           </strong>
+           evrişim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            convolutional network:
+           </strong>
+           evrişimsel ağ
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            convolutional neural network:
+           </strong>
+           evrişimsel sinir ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            coordinate descent:
+           </strong>
+           koordinat inişi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            coordinate ascent:
+           </strong>
+           koordinat çıkışı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            correlation:
+           </strong>
+           korelasyon
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            cost function:
+           </strong>
+           maliyet fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            covariance:
+           </strong>
+           eşdeğişirlik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            covariance matrix:
+           </strong>
+           eşdeğişirlik matrisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            coverage:
+           </strong>
+           kapsama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            critical temperature:
+           </strong>
+           kritik sıcaklık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            cross-correlation:
+           </strong>
+           çapraz korelasyon
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            cross-entropy:
+           </strong>
+           çapraz entropi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            cross-validation:
+           </strong>
+           çapraz sağlama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            curriculum learning:
+           </strong>
+           müfredat öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            curse of dimensionality:
+           </strong>
+           boyut laneti
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="d">
+        <h2>
+         <span class="section-number">
+          1.4.
+         </span>
+         D
+         <a class="headerlink" href="#d" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            d-seperation:
+           </strong>
+           d-ayırma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            damping:
+           </strong>
+           söndürme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            data generating distribution:
+           </strong>
+           veri üretim dağılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            data generating process:
+           </strong>
+           veri üretim işlemi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            data parallelism:
+           </strong>
+           veri paralelleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            dataset:
+           </strong>
+           veri kümesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            dataset augmentation:
+           </strong>
+           veri kümesi çeşitleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            debugging:
+           </strong>
+           hata ayıklama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            decision tree:
+           </strong>
+           karar ağacı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            decoder:
+           </strong>
+           kodçözücü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            deep belief network:
+           </strong>
+           derin inanç ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            deep Boltzmann machine:
+           </strong>
+           derin Boltzmann makinesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            deep feedforward network:
+           </strong>
+           derin ileri besleme ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            deep learning:
+           </strong>
+           derin öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            degenerate:
+           </strong>
+           yozlaşmış
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            denoising autoencoder:
+           </strong>
+           arıtan otokodlayıcı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            denoising score matching:
+           </strong>
+           arıtan skor eşleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            density estimation:
+           </strong>
+           yoğunluk kestirimi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            derivative:
+           </strong>
+           türev
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            design matrix:
+           </strong>
+           açıklayıcı değişkenler matrisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            detector layer:
+           </strong>
+           detektör katman
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            diagonal matrix:
+           </strong>
+           köşegen matris
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            differential entropy:
+           </strong>
+           diferansiyel entropi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Dirac delta function:
+           </strong>
+           Dirac delta fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            directed acyclic graph:
+           </strong>
+           yönlü çevrimsiz çizgesel
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            directed graph model:
+           </strong>
+           yönlü çizgesel model
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            directional derivative:
+           </strong>
+           yönlü türev
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            discriminative fine-tuning:
+           </strong>
+           ayrımcı hassas ayar
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            discriminative RBM:
+           </strong>
+           ayrımcı RBM
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            distributed representation:
+           </strong>
+           dağıtık gösterim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            domain adaptation:
+           </strong>
+           alan uyarlama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            dot product:
+           </strong>
+           iç çarpım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            double backprop:
+           </strong>
+           çift geri yayılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            doubly block circulant matrix:
+           </strong>
+           çift bloklu dairesel matris
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            dream sleep:
+           </strong>
+           rüya uykusu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            dropconnect:
+           </strong>
+           bağ sönümü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            dropout:
+           </strong>
+           iletim sönümü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            dynamic structure:
+           </strong>
+           dinamik yapı
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="e">
+        <h2>
+         <span class="section-number">
+          1.5.
+         </span>
+         E
+         <a class="headerlink" href="#e" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            e-step:
+           </strong>
+           e-adım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            early stopping:
+           </strong>
+           erken durdurma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            echo state network:
+           </strong>
+           yankı durum ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            effective capacity:
+           </strong>
+           etkin kapasite
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            eigendecomposition:
+           </strong>
+           özayrışma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            eigenvalue:
+           </strong>
+           özdeğer
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            eigenvector:
+           </strong>
+           özvektör
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            elementwise product:
+           </strong>
+           eleman çarpımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            embedding:
+           </strong>
+           gömülme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            empirical distribution:
+           </strong>
+           deneysel dağılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            emprical risk:
+           </strong>
+           deneysel risk
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            emprical risk minimization:
+           </strong>
+           deneysel risk enküçültmesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            encoder:
+           </strong>
+           kodlayıcı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            energy function:
+           </strong>
+           enerji fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            energy-based model:
+           </strong>
+           enerji tabanlı model
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            enhanced gradient:
+           </strong>
+           gelişmiş gradyan
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            ensemble methods:
+           </strong>
+           topluluk yöntemleri
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            epoch:
+           </strong>
+           epok
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            equality constraint:
+           </strong>
+           eşitlik kısıtı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            equivariance:
+           </strong>
+           eşit değişirlik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            error function:
+           </strong>
+           hata fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            estimation:
+           </strong>
+           kestirim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Euclidean norm:
+           </strong>
+           Euclid normu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Euclidean space:
+           </strong>
+           Euclid uzayı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Euler-Lagrange equation:
+           </strong>
+           Euler-Lagrange eşitliği
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            evidence lower bound:
+           </strong>
+           kanıt alt sınırı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            example:
+           </strong>
+           örnek
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            expectation:
+           </strong>
+           beklenti
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            expectation maximization:
+           </strong>
+           beklenti enbüyütme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            expected value:
+           </strong>
+           beklenti değeri
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            explaining away:
+           </strong>
+           savuşturma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            exploitation:
+           </strong>
+           faydalanma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            exploration:
+           </strong>
+           keşif
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            exponential:
+           </strong>
+           üstel
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            exponential distribution:
+           </strong>
+           üstel dağılım
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="f">
+        <h2>
+         <span class="section-number">
+          1.6.
+         </span>
+         F
+         <a class="headerlink" href="#f" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            f-score:
+           </strong>
+           f-skor
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            factorial:
+           </strong>
+           çarpınım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            factor:
+           </strong>
+           faktör
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            factor analysis:
+           </strong>
+           faktör analizi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            factor graph:
+           </strong>
+           faktörler çizgesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            factors of variation:
+           </strong>
+           değişirlik faktörleri
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            feature:
+           </strong>
+           öznitelik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            feature selection:
+           </strong>
+           öznitelik seçme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            feedforward neural network:
+           </strong>
+           ileri beslemeli sinir ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            fine-tuning:
+           </strong>
+           hassas ayar
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            finite differences:
+           </strong>
+           sonlu farklar
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            forget gate:
+           </strong>
+           unutma kapısı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            forward propagation:
+           </strong>
+           ileri yayılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Fourier transform:
+           </strong>
+           Fourier dönüşümü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            foveation:
+           </strong>
+           foveasyon
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            free energy:
+           </strong>
+           serbest enerji
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            frequency:
+           </strong>
+           frekans
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            frequentist probability:
+           </strong>
+           deneysel olasılık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            frequentist statistics:
+           </strong>
+           deneysel istatistik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Frobenius norm:
+           </strong>
+           Frobenius normu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            fully visible Bayes network:
+           </strong>
+           tamamen görünür Bayes ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            function:
+           </strong>
+           fonksiyon
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            functional derivatives:
+           </strong>
+           fonksiyonel türevler
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="g">
+        <h2>
+         <span class="section-number">
+          1.7.
+         </span>
+         G
+         <a class="headerlink" href="#g" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            Gabor function:
+           </strong>
+           Gabor fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            gated recurrent unit:
+           </strong>
+           kapılı yinelemeli ünite
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Gaussian distribution:
+           </strong>
+           Gauss dağılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Gaussian kernel:
+           </strong>
+           Gauss kerneli
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Gaussian mixture:
+           </strong>
+           Gauss karışımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            generalization:
+           </strong>
+           genelleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            generalized Lagrange function:
+           </strong>
+           genelleştirilmiş Lagrange
+fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            generalized lagrange:
+           </strong>
+           genelleştirilmiş Lagrange
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            generative adversarial networks:
+           </strong>
+           üretken çekişmeli ağlar
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            generative moment matching networks:
+           </strong>
+           üretken moment eşleyen ağlar
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            generator network:
+           </strong>
+           üretici ağ
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Gibbs distribution:
+           </strong>
+           Gibbs dağılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Gibbs sampling:
+           </strong>
+           Gibbs örneklemesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            global contrast normalization:
+           </strong>
+           global karşıt normalleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            GPU:
+           </strong>
+           grafik işlem birimi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            gradient:
+           </strong>
+           gradyan
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            gradient clipping:
+           </strong>
+           gradyan kırpma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            gradient ascent:
+           </strong>
+           gradyan çıkışı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            gradient descent:
+           </strong>
+           gradyan inişi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            graph:
+           </strong>
+           çizge
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            graph embedding:
+           </strong>
+           çizge gömülmesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            graphical model:
+           </strong>
+           çizgesel model
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            graphics processing unit:
+           </strong>
+           grafik işleme birimi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            graph theory:
+           </strong>
+           çizge kuramı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            greedy algorithm:
+           </strong>
+           hırslı algoritma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            greedy layer-wise unsupervised pretraining:
+           </strong>
+           katmanların
+denetimsiz hırslı öneğitilmesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            greedy supervised pretraining:
+           </strong>
+           hırslı denetimli öneğitme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            grid search:
+           </strong>
+           ızgara arama
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="h">
+        <h2>
+         <span class="section-number">
+          1.8.
+         </span>
+         H
+         <a class="headerlink" href="#h" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            Hadamard product:
+           </strong>
+           Hadamard çarpımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            harmonium:
+           </strong>
+           harmonyum
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            harmony theory:
+           </strong>
+           harmoni kuramı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Helmholtz free energy:
+           </strong>
+           Helmholtz serbest enerjisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Hessian matrix:
+           </strong>
+           Hesse matrisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            heteroscedastic:
+           </strong>
+           ayrı varyanslı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            hidden layer:
+           </strong>
+           gizli katman
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            hidden unit:
+           </strong>
+           gizli birim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            hill climbing:
+           </strong>
+           tepe tırmanışı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            hyperparameter optimization:
+           </strong>
+           hiperparametre eniyilemesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            hyperparameters:
+           </strong>
+           hiperparametreler
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            hypothesis space:
+           </strong>
+           hipotez uzayı
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="i">
+        <h2>
+         <span class="section-number">
+          1.9.
+         </span>
+         I
+         <a class="headerlink" href="#i" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            i.i.d. assumptions:
+           </strong>
+           i.i.d. varsayımları
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            identity matrix:
+           </strong>
+           birim matris
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            image:
+           </strong>
+           görüntü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            ImageNet Large Scale Visual Recognition Challange:
+           </strong>
+           ImageNet Geniş
+Ölçekli Tanıma Yarışması
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            immorality:
+           </strong>
+           aykırılık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            implementation:
+           </strong>
+           gerçekleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            importance sampling:
+           </strong>
+           önem örnekleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            importance weighted autoencoder:
+           </strong>
+           önem ağırlıklı otokodlayıcı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            independence:
+           </strong>
+           bağımsızlık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            independent and identically distributed:
+           </strong>
+           bağımsız özdeşçe
+dağılmış
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            independent component analysis:
+           </strong>
+           bağımsız bileşenler analizi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            independent subspace analysis:
+           </strong>
+           bağımsız altuzaylar analizi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            inequality constraint:
+           </strong>
+           eşitsizlik kısıtı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            inference:
+           </strong>
+           çıkarım, çıkarsama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            intercept:
+           </strong>
+           kesim noktası
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            inferotemporal cortex:
+           </strong>
+           şakak altı korteksi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            information retrieval:
+           </strong>
+           bilgi getirimi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            initialization:
+           </strong>
+           ilk değer atama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            interpolate:
+           </strong>
+           ara-değeri bulmak
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            intractable:
+           </strong>
+           kolay çözümlenemez
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            invariance:
+           </strong>
+           değişmezlik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            isotropic:
+           </strong>
+           izotrop
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="j">
+        <h2>
+         <span class="section-number">
+          1.10.
+         </span>
+         J
+         <a class="headerlink" href="#j" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            Jacobian matrix:
+           </strong>
+           Jacob matrisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            joint probability:
+           </strong>
+           ortak olasılık
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="k">
+        <h2>
+         <span class="section-number">
+          1.11.
+         </span>
+         K
+         <a class="headerlink" href="#k" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            k-means:
+           </strong>
+           k-ortalama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            k-nearest neighbor:
+           </strong>
+           k-en yakın komşu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Karush-Kuhn-Tucker conditions:
+           </strong>
+           Karush-Kuhn-Tucker koşulları
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            kernel machine:
+           </strong>
+           kernel makinesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            kernel trick:
+           </strong>
+           kernel hilesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            KKT conditions:
+           </strong>
+           KKT koşulları
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            KL divergence:
+           </strong>
+           KL ıraksaması
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            knowledge base:
+           </strong>
+           işlenmiş bilgi tabanı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Krylov methods:
+           </strong>
+           Krylov yöntemleri
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Kullback-Leibler divergence:
+           </strong>
+           Kullback-Leibler ıraksaması
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="l">
+        <h2>
+         <span class="section-number">
+          1.12.
+         </span>
+         L
+         <a class="headerlink" href="#l" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            label:
+           </strong>
+           etiket
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            label smoothing:
+           </strong>
+           etiket düzleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            ladder network:
+           </strong>
+           basamaklı ağ
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Lagrange multipliers:
+           </strong>
+           Lagrange çarpanları
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Lagrangian:
+           </strong>
+           Lagrange fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            laplace distribution:
+           </strong>
+           Laplace dağılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            latent:
+           </strong>
+           saklı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            latent variable:
+           </strong>
+           saklı değişken
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            layer:
+           </strong>
+           katman
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            leaky ReLU:
+           </strong>
+           sızıntılı ReLU
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            leaky units:
+           </strong>
+           sızıntılı birimler
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            learnin grate:
+           </strong>
+           öğrenme oranı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            likelihood:
+           </strong>
+           olabilirlik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            line search:
+           </strong>
+           doğru üzerinde arama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            linear combination:
+           </strong>
+           doğrusal bileşim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            linear dependence:
+           </strong>
+           doğrusal bağımlılık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            linear factor model:
+           </strong>
+           doğrusal faktör modeli
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            linear regression:
+           </strong>
+           doğrusal bağlanım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            link prediction:
+           </strong>
+           bağlantı öngörüsü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Lipschitz constant:
+           </strong>
+           Lipschitz sabiti
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Lipschitz continuous:
+           </strong>
+           Lipschitz süreklisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            liquid state machine:
+           </strong>
+           Likit durum makinesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            local conditional probability distribution:
+           </strong>
+           yerel koşullu
+olasılık dağılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            local contrast normalization:
+           </strong>
+           yerel karşıtlık normalleştirmesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            logistic regression:
+           </strong>
+           lojistik bağlanım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Logistic regression:
+           </strong>
+           Lojistik bağlanım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            logistic sigmoid:
+           </strong>
+           lojistik sigmoid
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            long short-term memory:
+           </strong>
+           uzun ömürlü kısa-dönem belleği
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            look-up table:
+           </strong>
+           başvuru çizelgesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            loop:
+           </strong>
+           döngü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            loopy belief propagation:
+           </strong>
+           döngüsel inanç yayılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            loss function:
+           </strong>
+           kayıp fonksiyonu
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="m">
+        <h2>
+         <span class="section-number">
+          1.13.
+         </span>
+         M
+         <a class="headerlink" href="#m" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            m-step:
+           </strong>
+           m-adım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            machine learning:
+           </strong>
+           yapay öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            machine translation:
+           </strong>
+           makine tercümesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            main diagonal:
+           </strong>
+           ana köşegen
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            manifold hypothesis:
+           </strong>
+           manifold hipotezi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            manifold learning:
+           </strong>
+           manifold öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            manifold tangent classifier:
+           </strong>
+           manifold tanjant sınıflandırıcısı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            MAP approximation:
+           </strong>
+           MAP yaklaştırması
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            marginal probability:
+           </strong>
+           marjinal olasılık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Markov chain:
+           </strong>
+           Markov zinciri
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Markov chain Monte Carlo:
+           </strong>
+           Markov zincirli Monte Carlo
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Markov network:
+           </strong>
+           Markov ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Markov random field:
+           </strong>
+           Markov rastgele alanı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            matrix:
+           </strong>
+           matris
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            matrix inverse:
+           </strong>
+           matris tersi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            matrix product:
+           </strong>
+           matris çarpımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            max norm:
+           </strong>
+           en büyük norm
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            max pooling:
+           </strong>
+           en büyükleri biriktirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            maximize:
+           </strong>
+           enbüyütme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            maximum aposteriori:
+           </strong>
+           en büyük ardıl
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            maximum likelihood:
+           </strong>
+           en büyük olabilirlik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            maxout:
+           </strong>
+           büyük-çıktı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            mean field:
+           </strong>
+           orta alan
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            mean squared error:
+           </strong>
+           ortalama karesel hata
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            measure theory:
+           </strong>
+           ölçme kuramı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            measure zero:
+           </strong>
+           sıfır ölçüm
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            medial temporal lobe:
+           </strong>
+           orta şakak lobu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            memory network:
+           </strong>
+           bellek ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            method of steepest descent:
+           </strong>
+           en dik iniş yöntemi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            minibatch:
+           </strong>
+           miniyığın
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            minimize:
+           </strong>
+           enküçültme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            missing inputs:
+           </strong>
+           eksik girdiler
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            mixing:
+           </strong>
+           karıştırma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            mixture density networks:
+           </strong>
+           karma yoğunluk ağları
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            mixture distribution:
+           </strong>
+           karma dağılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            mixture model:
+           </strong>
+           karma model
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            mixture of experts:
+           </strong>
+           uzman karması
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            model averaging:
+           </strong>
+           model ortalama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            model compression:
+           </strong>
+           model sıkıştırması
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            model identifiability:
+           </strong>
+           model tanımlanabilirliği
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            model parallelism:
+           </strong>
+           model benzeşmesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            moment matching:
+           </strong>
+           moment eşleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Moore-Penrose pseudoinverse:
+           </strong>
+           Moore-Penrose tersimsisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            moralized graph:
+           </strong>
+           düzeltilmiş çizge
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            multi-modal learning:
+           </strong>
+           çok-doruklu öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            multi-prediction DBM:
+           </strong>
+           çok-öngörülü DBM
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            multi-task learning:
+           </strong>
+           çoklu-görev öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            multilayer perception:
+           </strong>
+           çok katmanlı algılama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            multilayer perceptron:
+           </strong>
+           çok katmanlı perseptron
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            multinomial distribution:
+           </strong>
+           çok terimli dağılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            multinoulli distribution:
+           </strong>
+           çoklu Bernoulli dağılımı
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="n">
+        <h2>
+         <span class="section-number">
+          1.14.
+         </span>
+         N
+         <a class="headerlink" href="#n" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            naive Bayes:
+           </strong>
+           naif Bayes
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            natural image:
+           </strong>
+           doğal görüntü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            natural language processing:
+           </strong>
+           doğal dil işleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            nearest neighbor regression:
+           </strong>
+           en yakın komşu bağlanımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            negative definite:
+           </strong>
+           negatif tanımlı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            negative phase:
+           </strong>
+           negatif faz
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Nesterov momentum:
+           </strong>
+           Nesterov momentumu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Netflix Grand Prize:
+           </strong>
+           Netflix Büyük Ödülü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            neural language model:
+           </strong>
+           sinirsel dil modeli
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            neural network:
+           </strong>
+           sinir ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            neural turing machine:
+           </strong>
+           sinirsel Turing Makinesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            neural machine translation:
+           </strong>
+           sinirsel makine çevirisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            neuroscience:
+           </strong>
+           sinirbilim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Newton’s method:
+           </strong>
+           Newton yöntemi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            no free lunch theorem:
+           </strong>
+           ``bedaya yemek yok’’ teoremi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            noise-contrastive estimation:
+           </strong>
+           gürültüye karşıt kestirim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            nonlinear:
+           </strong>
+           eğrisel
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            nonlinearity:
+           </strong>
+           eğrisellik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            nonparametric model:
+           </strong>
+           parametrik olmayan model
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            normal distribution:
+           </strong>
+           normal dağılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            normal equations:
+           </strong>
+           normal denklemler
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            normalized initialization:
+           </strong>
+           normalleştirilmiş ilk değer atama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            numerical differentiation:
+           </strong>
+           sayısal farklar
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="o">
+        <h2>
+         <span class="section-number">
+          1.15.
+         </span>
+         O
+         <a class="headerlink" href="#o" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            object detection:
+           </strong>
+           nesne saptama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            object recognition:
+           </strong>
+           nesne tanıma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            objective function:
+           </strong>
+           amaç fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            one-hot representation:
+           </strong>
+           bir-elemanı-bir olan gösterim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            one-hot vector:
+           </strong>
+           bir-elemanı-bir olan vektör
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            one-shot learning:
+           </strong>
+           tek seferde öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            operation:
+           </strong>
+           işlem
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            optimization:
+           </strong>
+           eniyileme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            orthodox statistics:
+           </strong>
+           Ortodoks istatistiği
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            orthogonal matching pursuit:
+           </strong>
+           ortogonal eşleştirme takibi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            orthogonal matrix:
+           </strong>
+           ortogonal matris
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            orthogonality:
+           </strong>
+           ortogonallik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            output layer:
+           </strong>
+           çıktı katmanı
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="p">
+        <h2>
+         <span class="section-number">
+          1.16.
+         </span>
+         P
+         <a class="headerlink" href="#p" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            padding:
+           </strong>
+           doldurma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            parallel distributed processing:
+           </strong>
+           paralel dağıtık işleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            parameter initialization:
+           </strong>
+           parametrelere ilk değer ataması
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            parameter sharing:
+           </strong>
+           parametre paylaşımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            parameter tying:
+           </strong>
+           parametre eşleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            parametric model:
+           </strong>
+           parametrik model
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            parametric ReLU:
+           </strong>
+           parametrik ReLU
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            parent:
+           </strong>
+           üst
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            parsing:
+           </strong>
+           Sözdizimsel ayrıştırma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            partial derivative:
+           </strong>
+           kısmi türev
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            partition function:
+           </strong>
+           bölüntü fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            perceptron:
+           </strong>
+           perseptron
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            persistent contrastive divergence:
+           </strong>
+           kalıcı karşıtsal ıraksama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            perturbation analysis:
+           </strong>
+           pertürbasyon analizi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            point estimator:
+           </strong>
+           nokta kestiricisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            policy:
+           </strong>
+           politika
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            pooling:
+           </strong>
+           biriktirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            positive definite:
+           </strong>
+           pozitif tanımlı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            positive phase:
+           </strong>
+           pozitif faz
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            posterior:
+           </strong>
+           ardıl
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            posterior probability:
+           </strong>
+           ardıl olasılık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            posterior distribution:
+           </strong>
+           ardıl dağılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            precision:
+           </strong>
+           kesinlik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            predictive sparse decomposition:
+           </strong>
+           öngörüsel seyrek ayrışım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            preprocessing:
+           </strong>
+           önişleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            presentation:
+           </strong>
+           sunum
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            pretraining:
+           </strong>
+           öneğitme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            primary visual cortex:
+           </strong>
+           birincil görsel korteks
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            principal component analysis:
+           </strong>
+           ana bileşenler analizi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            prior:
+           </strong>
+           öncül
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            prior probability:
+           </strong>
+           öncül olasılık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            prior probability distribution:
+           </strong>
+           öncül olasılık dağılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            probabilistic PCA:
+           </strong>
+           olasılıksal PCA
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            probabilistic model:
+           </strong>
+           olasılıksal model
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            probability density function:
+           </strong>
+           olasılık yoğunluk fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            probability distribution:
+           </strong>
+           olasılık dağılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            probability mass function:
+           </strong>
+           olasılık kütle fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            probability mass function estimation:
+           </strong>
+           olasılık kütle fonksiyonu
+kestirimi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            product of experts:
+           </strong>
+           uzman çarpımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            product rule of probability:
+           </strong>
+           olasılığın çarpım kuralı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            pseudolikelihood:
+           </strong>
+           yarı benzerlik
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="q">
+        <h2>
+         <span class="section-number">
+          1.17.
+         </span>
+         Q
+         <a class="headerlink" href="#q" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            quadrature pair:
+           </strong>
+           dört evreli çift
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            quasi-Newton methods:
+           </strong>
+           Newton-vari yöntemler
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="r">
+        <h2>
+         <span class="section-number">
+          1.18.
+         </span>
+         R
+         <a class="headerlink" href="#r" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            radial basis function:
+           </strong>
+           dairesel baz fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            random search:
+           </strong>
+           rastgele arama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            random variable:
+           </strong>
+           rastgele değişken
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            ratio matching:
+           </strong>
+           oran eşleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            recall:
+           </strong>
+           duyarlılık
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            receptive field:
+           </strong>
+           alım alanı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            recommender systems:
+           </strong>
+           önerici sistemler
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            rectified linear unit:
+           </strong>
+           düzeltilmiş doğrusal birim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            recurrent network:
+           </strong>
+           yinelemeli ağ
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            recurrent neural network:
+           </strong>
+           yinelemeli sinir ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            regression:
+           </strong>
+           bağlanım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            regularization:
+           </strong>
+           düzenlileştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            regularizer:
+           </strong>
+           düzenlileştirici
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            reinforcement learning:
+           </strong>
+           pekiştirmeli öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            relational database:
+           </strong>
+           ilişkisel veritabanı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            relations:
+           </strong>
+           bağıntılar
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            reparametrization trick:
+           </strong>
+           yeniden parametreleştirme hilesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            representation:
+           </strong>
+           gösterim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            representation learning:
+           </strong>
+           gösterim öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            representational capacity:
+           </strong>
+           gösterimsel kapasite
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            restricted Boltzmann machine:
+           </strong>
+           kısıtlandırılmış Boltzmann makinesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Ridge regression:
+           </strong>
+           Ridge bağlanımı
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="s">
+        <h2>
+         <span class="section-number">
+          1.19.
+         </span>
+         S
+         <a class="headerlink" href="#s" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            saddle points:
+           </strong>
+           eyer noktaları
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            sample mean:
+           </strong>
+           örnekleme ortalaması
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            scalar:
+           </strong>
+           skaler
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            score matching:
+           </strong>
+           skor eşleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            second derivative:
+           </strong>
+           ikinci türev
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            second derivative test:
+           </strong>
+           ikinci türev testi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            self-information:
+           </strong>
+           özbilgi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            semantic hashing:
+           </strong>
+           anlamsal adresleme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            semi-supervised learning:
+           </strong>
+           yarı denetimli öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            separable convolution:
+           </strong>
+           ayrılabilir evrişim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            separation:
+           </strong>
+           ayırma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            sequence:
+           </strong>
+           sıra (sıralı dizi)
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            set:
+           </strong>
+           küme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Shannon entropy:
+           </strong>
+           Shannon entropisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            sigmoid belief network:
+           </strong>
+           sigmoid inanç ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            simple cell:
+           </strong>
+           yalın hücre
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            simultaneous:
+           </strong>
+           eşzamanlı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            singular value:
+           </strong>
+           tekil değer
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            singular value decomposition:
+           </strong>
+           tekil değer ayrışımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            singular vector:
+           </strong>
+           tekil vektör
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            slow feature analysis:
+           </strong>
+           yavaş öznitelik analizi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            smoothness:
+           </strong>
+           pürüzsüzlük
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            spam detection:
+           </strong>
+           spam saptama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            sparse coding:
+           </strong>
+           seyrek kodlama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            spike and slab sparse coding:
+           </strong>
+           sivri ve kalın seyrek kodlama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            sparse initialization:
+           </strong>
+           seyrek ilk değer atama
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            sparse representation:
+           </strong>
+           seyrek gösterim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            spectral radius:
+           </strong>
+           spektral yarıçap
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            speech recognition:
+           </strong>
+           konuşma tanıma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            sphering:
+           </strong>
+           küre şeklini verme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            square matrix:
+           </strong>
+           kare matris
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            standard deviation:
+           </strong>
+           standart sapma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            standard error:
+           </strong>
+           standart hata
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            standard error of the mean:
+           </strong>
+           ortalamanın standart hatası
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            statistic:
+           </strong>
+           istatistik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            statistical learning theory:
+           </strong>
+           istatiksel öğrenme kuramı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            steepest descent:
+           </strong>
+           en dik iniş yöntemi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            stochastic back-propagation:
+           </strong>
+           stokastik geri yayılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            stochastic gradient ascent:
+           </strong>
+           stokastik gradyan çıkışı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            stochastic gradient descent:
+           </strong>
+           stokastik gradyan inişi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            stochastic maximum likelihood:
+           </strong>
+           stokastik en büyük olabilirlik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            stochastic pooling:
+           </strong>
+           stokastik biriktirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            structure learning:
+           </strong>
+           yapısal öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            structured output:
+           </strong>
+           yapılandırılmış çıktı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            structured probabilistic model:
+           </strong>
+           yapılandırılmış olasılık modeli
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            sum rule of probability:
+           </strong>
+           olasılığın toplam kuralı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            sum product network:
+           </strong>
+           toplam-çarpım ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            supervised:
+           </strong>
+           denetimli
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            supervised fine-tuning:
+           </strong>
+           denetimli hassas ayar
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            supervised learning:
+           </strong>
+           denetimli öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            support vector machine:
+           </strong>
+           destek vektör makinesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            surrogate loss function:
+           </strong>
+           vekil kayıp fonksiyonu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            symmetric matrix:
+           </strong>
+           simetrik matris
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            synchronize:
+           </strong>
+           senkron
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="t">
+        <h2>
+         <span class="section-number">
+          1.20.
+         </span>
+         T
+         <a class="headerlink" href="#t" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            tangent distance:
+           </strong>
+           tanjant mesafesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            tangent plane:
+           </strong>
+           tanjant düzlemi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            tangent prop:
+           </strong>
+           tanjant yayılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            teacher forcing:
+           </strong>
+           öğretmen zoru
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            tempering:
+           </strong>
+           kızdırma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            template matching:
+           </strong>
+           şablon eşleştirme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            tensor:
+           </strong>
+           tensör
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            test set:
+           </strong>
+           test kümesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Tikhonov regularization:
+           </strong>
+           Tikhonov düzenlileştirmesi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            tiled convolution:
+           </strong>
+           döşeli evrişim
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            time-delay neural network:
+           </strong>
+           zaman-gecikmeli sinir ağı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Toeplitz matrix:
+           </strong>
+           Toeplitz matrisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            topographic ICA:
+           </strong>
+           topografik ICA
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            trace operator:
+           </strong>
+           iz operatörü
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            tractable:
+           </strong>
+           kolay çözümlenebilir
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            training:
+           </strong>
+           eğitme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            training error:
+           </strong>
+           eğitim hatası
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            transcription:
+           </strong>
+           transkripsiyon
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            transfer learning:
+           </strong>
+           aktarım öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            transpose:
+           </strong>
+           transpoz
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            triangle inequality:
+           </strong>
+           üçgen eşitsizliği
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            triangulated graph:
+           </strong>
+           üçgenlemeli çizge
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            tuple:
+           </strong>
+           çokuzlu
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="u">
+        <h2>
+         <span class="section-number">
+          1.21.
+         </span>
+         U
+         <a class="headerlink" href="#u" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            unbiased:
+           </strong>
+           önyargısız
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            underdetermined:
+           </strong>
+           eksik belirtilmiş
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            underflow:
+           </strong>
+           küçümenlik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            undirected graphical model:
+           </strong>
+           yönsüz çizgesel model
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            undirected model:
+           </strong>
+           yönsüz model
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            uniform distribution:
+           </strong>
+           düzgün dağılım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            unit norm:
+           </strong>
+           birim norm
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            unit vector:
+           </strong>
+           birim vektör
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            universal approximation theorem:
+           </strong>
+           evrensel yaklaşıklık teoremi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            universal approximator:
+           </strong>
+           evrensel yakınlaştırıcı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            unnormalized probability distribution:
+           </strong>
+           normalleştirilmemiş
+olasılık dağılımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            unpooling:
+           </strong>
+           dağıtım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            unsupervised learning:
+           </strong>
+           denetimsiz öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            unsupervised pretraining:
+           </strong>
+           denetimsiz öneğitme
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="v">
+        <h2>
+         <span class="section-number">
+          1.22.
+         </span>
+         V
+         <a class="headerlink" href="#v" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            v-structure:
+           </strong>
+           v-yapısı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            Vapnik-Chervonenkis dimension:
+           </strong>
+           Vapnik-Chervonenkis boyutu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            variable:
+           </strong>
+           değişken
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            variance:
+           </strong>
+           değişirlik
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            variational:
+           </strong>
+           değişimsel
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            variational autoencoder:
+           </strong>
+           değişimsel otokodlayıcı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            variational derivatives:
+           </strong>
+           değişken türevler
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            variational free energy:
+           </strong>
+           değişken serbest enerji
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            variational inference:
+           </strong>
+           değişimsel çıkarım
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            VC dimension:
+           </strong>
+           VC boyutu
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            vector:
+           </strong>
+           vektör
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            virtual adversarial examples:
+           </strong>
+           sanal çekişmeli örnekler
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            visible layer:
+           </strong>
+           görünür katman
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            visible variable:
+           </strong>
+           görünür değişken
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            volumetric data:
+           </strong>
+           hacimsel veri
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="w">
+        <h2>
+         <span class="section-number">
+          1.23.
+         </span>
+         W
+         <a class="headerlink" href="#w" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            Wake-Sleep:
+           </strong>
+           Uyandırma-Uyutma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            weight decay:
+           </strong>
+           ağırlık azalımı
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            weight space symmetry:
+           </strong>
+           ağırlık uzayı simetrisi
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            whitening:
+           </strong>
+           beyazlaştırma
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            word embedding:
+           </strong>
+           kelime gömülmesi
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="z">
+        <h2>
+         <span class="section-number">
+          1.24.
+         </span>
+         Z
+         <a class="headerlink" href="#z" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            zero-data learning:
+           </strong>
+           verisiz öğrenme
+          </p>
+         </li>
+         <li>
+          <p>
+           <strong>
+            zero-shot learning:
+           </strong>
+           verisiz öğrenme
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="diger">
+        <h2>
+         <span class="section-number">
+          1.25.
+         </span>
+         Diğer
+         <a class="headerlink" href="#diger" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            0-1 loss:
+           </strong>
+           0-1 kayıp
+          </p>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="side-doc-outline">
+      <div class="side-doc-outline--content">
+       <div class="localtoc">
+        <p class="caption">
+         İçindekiler
+        </p>
+        <ul>
+         <li>
+          <a class="reference internal" href="#">
+           1. Sözlük
+          </a>
+          <ul>
+           <li>
+            <a class="reference internal" href="#a">
+             1.1. A
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#b">
+             1.2. B
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#c">
+             1.3. C
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#d">
+             1.4. D
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#e">
+             1.5. E
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#f">
+             1.6. F
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#g">
+             1.7. G
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#h">
+             1.8. H
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#i">
+             1.9. I
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#j">
+             1.10. J
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#k">
+             1.11. K
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#l">
+             1.12. L
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#m">
+             1.13. M
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#n">
+             1.14. N
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#o">
+             1.15. O
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#p">
+             1.16. P
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#q">
+             1.17. Q
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#r">
+             1.18. R
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#s">
+             1.19. S
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#t">
+             1.20. T
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#u">
+             1.21. U
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#v">
+             1.22. V
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#w">
+             1.23. W
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#z">
+             1.24. Z
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#diger">
+             1.25. Diğer
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="clearer">
+     </div>
     </div>
-  </body>
+    <div class="pagenation">
+     <a accesskey="P" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" href="../index.html" id="button-prev" role="botton">
+      <i class="pagenation-arrow-L fas fa-arrow-left fa-lg">
+      </i>
+      <div class="pagenation-text">
+       <span class="pagenation-direction">
+        Önceki
+       </span>
+       <div>
+        Yapay Öğrenme Sözlüğü
+       </div>
+      </div>
+     </a>
+     <a accesskey="N" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" href="biz_kimiz.html" id="button-next" role="botton">
+      <i class="pagenation-arrow-R fas fa-arrow-right fa-lg">
+      </i>
+      <div class="pagenation-text">
+       <span class="pagenation-direction">
+        Sonraki
+       </span>
+       <div>
+        2. Biz Kimiz?
+       </div>
+      </div>
+     </a>
+    </div>
+   </main>
+  </div>
+ </body>
 </html>
