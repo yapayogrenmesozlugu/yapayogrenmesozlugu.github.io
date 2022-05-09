@@ -19,6 +19,12 @@ def revise_html(html_file_path):
                 new_text = text.replace(key_to_search,en_to_tr[key_to_search])
                 el.string = new_text
 
+        input_with_placeholders = soup.find_all('input', class_="mdl-textfield__input")
+        for i in input_with_placeholders:
+            new_text = i["placeholder"].replace("Search", "Ara")
+            i["placeholder"] = new_text
+
+
         links = soup.find_all('a', class_="reference external")
         for link in links:
             link["target"] = "_blank"
