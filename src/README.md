@@ -19,6 +19,7 @@ build.sh isimli betiği çalıştırdığınızda;
 ```
 d2lbook build html
 ```
+- son olarak gömülü metnin çevirisi ve harici bağlantıların yeni sekmede açılması için oluşturulan html dosyalarını düzenleyen revise_html.py betiğini çalıştırır.
 
 # yapayogrenmesozlugu.github.io Adresinde Yayın:
 Sözlüğü https://github.com/yapayogrenmesozlugu/yapayogrenmesozlugu.github.io adresinde yayınlamak için aşağıdaki komutu kullanın:
