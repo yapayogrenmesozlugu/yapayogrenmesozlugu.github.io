@@ -19,7 +19,8 @@ build.sh isimli betiği çalıştırdığınızda;
 ```
 d2lbook build html
 ```
-- son olarak gömülü metnin çevirisi ve harici bağlantıların yeni sekmede açılması için oluşturulan html dosyalarını düzenleyen revise_html.py betiğini çalıştırır. Bu betiğin çalışabilmesi için "beautifulsoup4" paketinin kurulu olması gerekmektedir.
+- html dosyaları oluştuktan sonra gömülü metnin çevirisi ve harici bağlantıların yeni sekmede açılması için oluşturulan html dosyalarını düzenleyen revise_html.py betiğini çalıştırır. Bu betiğin çalışabilmesi için "beautifulsoup4" paketinin kurulu olması gerekmektedir.
+- son olarak arama işlevi ile ilgili statik dosyaların çevrili hallerini ilgili klasörlerine kopyalar.
 
 # yapayogrenmesozlugu.github.io Adresinde Yayın:
 Sözlüğü https://github.com/yapayogrenmesozlugu/yapayogrenmesozlugu.github.io adresinde yayınlamak için aşağıdaki komutu kullanın:
