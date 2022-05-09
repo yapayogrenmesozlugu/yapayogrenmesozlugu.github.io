@@ -133,12 +133,12 @@ var Search = {
   performSearch : function(query) {
     // create the required interface elements
     this.out = $('#search-results');
-    this.title = $('<h2>' + _('Searching') + '</h2>').appendTo(this.out);
+    this.title = $('<h2>' + _('Aranıyor...') + '</h2>').appendTo(this.out);
     this.dots = $('<span></span>').appendTo(this.title);
     this.status = $('<p class="search-summary">&nbsp;</p>').appendTo(this.out);
     this.output = $('<ul class="search"/>').appendTo(this.out);
 
-    $('#search-progress').text(_('Preparing search...'));
+    $('#search-progress').text(_('Aramaya hazırlanılıyor...'));
     this.startPulse();
 
     // index already loaded, the browser was quick!
@@ -299,11 +299,11 @@ var Search = {
       // search finished, update title and status message
       else {
         Search.stopPulse();
-        Search.title.text(_('Search Results'));
+        Search.title.text(_('Arama Sonuçları'));
         if (!resultCount)
-          Search.status.text(_('Your search did not match any documents. Please make sure that all words are spelled correctly and that you\'ve selected enough categories.'));
+          Search.status.text(_('Aramanız herhangi bir dökümanla eşleşmedi. Kelimeyi doğru yazdığınızdan emin olun.'));
         else
-            Search.status.text(_('Search finished, found %s page(s) matching the search query.').replace('%s', resultCount));
+            Search.status.text(_('Arama tamamlandı, eşleşen %s sayfa bulundu.').replace('%s', resultCount));
         Search.status.fadeIn(500);
       }
     }
