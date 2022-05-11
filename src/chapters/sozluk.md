@@ -1,7 +1,7 @@
-# Sözlük
-
-## A
-
+# Sözlük  
+  
+## A  
+  
 - **absolute value verification:** mutlak değer doğrulaması  
 - **accuracy:** doğruluk  
 - **activation function:** aktifleştirme fonksiyonu  
@@ -26,10 +26,10 @@
 - **audio:** ses  
 - **autoencoder:** otokodlayıcı  
 - **automatic speech recognition:** konuşma tanıma  
-- **autoregressive networks:** otobağlayıcı ağlar  
-
-
-## B
+- **autoregressive networks:** otobağlayıcı ağlar   
+  
+  
+## B  
 - **back-propagation:** geri yayılım  
 - **back-propagation through time:** zamanla geri yayılım  
 - **bag of words:** sözcük çuvalı  
@@ -49,23 +49,23 @@
 - **bias parameter:** önyargı parametresi  
 - **biased importance sampling:** önyargılı önem örnekleme  
 - **binary relation:** ikili bağıntı  
-- **block gibbs sampling:** blok Gibbs örnekleme  
-- **boltzmann distribution:** Boltzmann dağılımı  
-- **boltzmann machine:** Boltzmann makinesi  
+- **block Gibbs sampling:** blok Gibbs örnekleme  
+- **Boltzmann distribution:** Boltzmann dağılımı  
+- **Boltzmann machine:** Boltzmann makinesi  
 - **broadcasting:** yayımlama  
 - **brute force:** kaba kuvvet  
-- **burn in:** alıştırma  
-
-
-## C
-- **calculus:** analiz  
-- **calculus of variations:** değişim analizi  
+- **burn in:** alıştırma   
+  
+  
+## C  
+- **calculus:** hesap  
+- **calculus of variations:** değişim analizi, değişim hesabı  
 - **cascade:** aşamalı  
 - **categorical distribution:** kategorik dağılım  
 - **centering trick:** ortalama hilesi  
 - **central limit theorem:** merkezi limit teoremi  
 - **chain rule:** zincir kuralı  
-- **chain rule of productivity:** olasılığın zincir kuralı  
+- **chain rule of probability:** olasılığın zincir kuralı  
 - **chess:** satranç  
 - **chord:** kiriş  
 - **chordal graph:** kirişli çizge  
@@ -86,7 +86,7 @@
 - **conditional independence:** koşullu bağımsızlık  
 - **conditional probability:** koşullu olasılık  
 - **conditional RBM:** koşullu RBM  
-- **connectionism:** bağlantıcılık  
+- **connectionism:** bağlantısallık  
 - **connectionist temporal classification:** bağlantıcı zamansal sınıflandırma  
 - **consistency:** tutarlılık  
 - **constancy:** sabitlik  
@@ -118,10 +118,10 @@
 - **cross-validation:** çapraz sağlama  
 - **curriculum learning:** müfredat öğrenme  
 - **curse of dimensionality:** boyut laneti  
-
-
-## D
-- **d-seperation:** d-ayırma  
+  
+  
+## D  
+- **d-seperation:** d-ayırma, boyut ayırma  
 - **damping:** söndürme  
 - **data generating distribution:** veri üretim dağılımı  
 - **data generating process:** veri üretim işlemi  
@@ -130,7 +130,7 @@
 - **dataset augmentation:** veri kümesi çeşitleme  
 - **debugging:** hata ayıklama  
 - **decision tree:** karar ağacı  
-- **decoder:** kodçözücü  
+- **decoder:** kod çözücü  
 - **deep belief network:** derin inanç ağı  
 - **deep Boltzmann machine:** derin Boltzmann makinesi  
 - **deep feedforward network:** derin ileri besleme ağı  
@@ -141,7 +141,7 @@
 - **density estimation:** yoğunluk kestirimi  
 - **derivative:** türev  
 - **design matrix:** açıklayıcı değişkenler matrisi  
-- **detector layer:** detektör katman  
+- **detector layer:** detektör katman, tespitçi katman  
 - **diagonal matrix:** köşegen matris  
 - **differential entropy:** diferansiyel entropi  
 - **Dirac delta function:** Dirac delta fonksiyonu  
@@ -159,9 +159,10 @@
 - **dropconnect:** bağ sönümü  
 - **dropout:** iletim sönümü  
 - **dynamic structure:** dinamik yapı  
-
-
-## E
+  
+  
+  
+## E  
 - **e-step:** e-adım  
 - **early stopping:** erken durdurma  
 - **echo state network:** yankı durum ağı  
@@ -170,7 +171,7 @@
 - **eigenvalue:** özdeğer  
 - **eigenvector:** özvektör  
 - **elementwise product:** eleman çarpımı  
-- **embedding:** gömülme  
+- **embedding:** gömme  
 - **empirical distribution:** deneysel dağılım  
 - **emprical risk:** deneysel risk  
 - **emprical risk minimization:** deneysel risk enküçültmesi  
@@ -196,10 +197,10 @@
 - **exploitation:** faydalanma  
 - **exploration:** keşif  
 - **exponential:** üstel  
-- **exponential distribution:** üstel dağılım  
-
-
-## F
+- **exponential distribution:** üstel dağılım   
+  
+  
+## F  
 - **f-score:** f-skor  
 - **factorial:** çarpınım  
 - **factor:** faktör  
@@ -222,10 +223,10 @@
 - **Frobenius norm:** Frobenius normu  
 - **fully visible Bayes network:** tamamen görünür Bayes ağı  
 - **function:** fonksiyon  
-- **functional derivatives:** fonksiyonel türevler  
-
-
-## G
+- **functional derivatives:** fonksiyonel türevler   
+  
+  
+## G  
 - **Gabor function:** Gabor fonksiyonu  
 - **gated recurrent unit:** kapılı yinelemeli ünite  
 - **Gaussian distribution:** Gauss dağılımı  
@@ -253,10 +254,10 @@
 - **greedy algorithm:** hırslı algoritma  
 - **greedy layer-wise unsupervised pretraining:** katmanların denetimsiz hırslı öneğitilmesi  
 - **greedy supervised pretraining:** hırslı denetimli öneğitme  
-- **grid search:** ızgara arama  
-
-
-## H
+- **grid search:** ızgara arama   
+  
+  
+## H  
 - **Hadamard product:** Hadamard çarpımı  
 - **harmonium:** harmonyum  
 - **harmony theory:** harmoni kuramı  
@@ -269,13 +270,13 @@
 - **hyperparameter optimization:** hiperparametre eniyilemesi  
 - **hyperparameters:** hiperparametreler  
 - **hypothesis space:** hipotez uzayı  
-
-
-## I
+  
+  
+## I  
 - **i.i.d. assumptions:** i.i.d. varsayımları  
 - **identity matrix:** birim matris  
 - **image:** görüntü  
-- **ImageNet Large Scale Visual Recognition Challange:** ImageNet Geniş Ölçekli Tanıma Yarışması  
+%- **ImageNet Large Scale Visual Recognition Challange:** ImageNet Geniş Ölçekli Tanıma Yarışması  
 - **immorality:** aykırılık  
 - **implementation:** gerçekleştirme  
 - **importance sampling:** önem örnekleme  
@@ -287,21 +288,21 @@
 - **inequality constraint:** eşitsizlik kısıtı  
 - **inference:** çıkarım, çıkarsama  
 - **intercept:** kesim noktası  
-- **inferotemporal cortex:** şakak altı korteksi  
+%- **inferotemporal cortex:** şakak altı korteksi  
 - **information retrieval:** bilgi getirimi  
 - **initialization:** ilk değer atama  
 - **interpolate:** ara-değeri bulmak  
 - **intractable:** kolay çözümlenemez  
 - **invariance:** değişmezlik  
-- **isotropic:** izotrop  
-
-
-## J
+- **isotropic:** izotrop    
+  
+  
+## J  
 - **Jacobian matrix:** Jacob matrisi  
-- **joint probability:** ortak olasılık  
-
-
-## K
+- **joint probability:** ortak olasılık   
+  
+  
+## K  
 - **k-means:** k-ortalama  
 - **k-nearest neighbor:** k-en yakın komşu  
 - **Karush-Kuhn-Tucker conditions:** Karush-Kuhn-Tucker koşulları  
@@ -311,22 +312,22 @@
 - **KL divergence:** KL ıraksaması  
 - **knowledge base:** işlenmiş bilgi tabanı  
 - **Krylov methods:** Krylov yöntemleri  
-- **Kullback-Leibler divergence:** Kullback-Leibler ıraksaması  
-
-
-## L
+- **Kullback-Leibler divergence:** Kullback-Leibler ıraksaması   
+  
+  
+## L  
 - **label:** etiket  
 - **label smoothing:** etiket düzleştirme  
 - **ladder network:** basamaklı ağ  
 - **Lagrange multipliers:** Lagrange çarpanları  
 - **Lagrangian:** Lagrange fonksiyonu  
-- **laplace distribution:** Laplace dağılımı  
+- **Laplace distribution:** Laplace dağılımı  
 - **latent:** saklı  
 - **latent variable:** saklı değişken  
 - **layer:** katman  
 - **leaky ReLU:** sızıntılı ReLU  
 - **leaky units:** sızıntılı birimler  
-- **learnin grate:** öğrenme oranı  
+- **learning rate:** öğrenme oranı  
 - **likelihood:** olabilirlik  
 - **line search:** doğru üzerinde arama  
 - **linear combination:** doğrusal bileşim  
@@ -336,20 +337,21 @@
 - **link prediction:** bağlantı öngörüsü  
 - **Lipschitz constant:** Lipschitz sabiti  
 - **Lipschitz continuous:** Lipschitz süreklisi  
-- **liquid state machine:** Likit durum makinesi  
+- **liquid state machine:** likit durum makinesi  
 - **local conditional probability distribution:** yerel koşullu olasılık dağılımı  
 - **local contrast normalization:** yerel karşıtlık normalleştirmesi  
 - **logistic regression:** lojistik bağlanım  
-- **Logistic regression:** Lojistik bağlanım  
+- **logistic regression:** lojistik bağlanım  
 - **logistic sigmoid:** lojistik sigmoid  
 - **long short-term memory:** uzun ömürlü kısa-dönem belleği  
 - **look-up table:** başvuru çizelgesi  
 - **loop:** döngü  
 - **loopy belief propagation:** döngüsel inanç yayılımı  
-- **loss function:** kayıp fonksiyonu  
-
-
-## M
+- **loss:** kayıp   
+- **loss function:** kayıp fonksiyonu   
+  
+  
+## M  
 - **m-step:** m-adım  
 - **machine learning:** yapay öğrenme  
 - **machine translation:** makine tercümesi  
@@ -401,9 +403,9 @@
 - **multilayer perceptron:** çok katmanlı perseptron  
 - **multinomial distribution:** çok terimli dağılım  
 - **multinoulli distribution:** çoklu Bernoulli dağılımı  
-
-
-## N
+  
+  
+## N  
 - **naive Bayes:** naif Bayes  
 - **natural image:** doğal görüntü  
 - **natural language processing:** doğal dil işleme  
@@ -418,7 +420,7 @@
 - **neural machine translation:** sinirsel makine çevirisi  
 - **neuroscience:** sinirbilim  
 - **Newton's method:** Newton yöntemi  
-- **no free lunch theorem:** ``bedaya yemek yok'' teoremi  
+- **no free lunch theorem:** ``bedava yemek yok'' teoremi  
 - **noise-contrastive estimation:** gürültüye karşıt kestirim  
 - **nonlinear:** eğrisel  
 - **nonlinearity:** eğrisellik  
@@ -426,10 +428,10 @@
 - **normal distribution:** normal dağılım  
 - **normal equations:** normal denklemler  
 - **normalized initialization:** normalleştirilmiş ilk değer atama  
-- **numerical differentiation:** sayısal farklar  
-
-
-## O
+- **numerical differentiation:** sayısal farklar   
+  
+  
+## O  
 - **object detection:** nesne saptama  
 - **object recognition:** nesne tanıma  
 - **objective function:** amaç fonksiyonu  
@@ -438,14 +440,14 @@
 - **one-shot learning:** tek seferde öğrenme  
 - **operation:** işlem  
 - **optimization:** eniyileme  
-- **orthodox statistics:** Ortodoks istatistiği  
+- **orthodox statistics:** ortodoks istatistiği  
 - **orthogonal matching pursuit:** ortogonal eşleştirme takibi  
 - **orthogonal matrix:** ortogonal matris  
 - **orthogonality:** ortogonallik  
-- **output layer:** çıktı katmanı  
-
-
-## P
+- **output layer:** çıktı katmanı   
+  
+  
+## P  
 - **padding:** doldurma  
 - **parallel distributed processing:** paralel dağıtık işleme  
 - **parameter initialization:** parametrelere ilk değer ataması  
@@ -454,14 +456,14 @@
 - **parametric model:** parametrik model  
 - **parametric ReLU:** parametrik ReLU  
 - **parent:** üst  
-- **parsing:** Sözdizimsel ayrıştırma  
+- **parsing:** sözdizimsel ayrıştırma  
 - **partial derivative:** kısmi türev  
 - **partition function:** bölüntü fonksiyonu  
 - **perceptron:** perseptron  
 - **persistent contrastive divergence:** kalıcı karşıtsal ıraksama  
 - **perturbation analysis:** pertürbasyon analizi  
 - **point estimator:** nokta kestiricisi  
-- **policy:** politika  
+- **policy:** politika, strateji  
 - **pooling:** biriktirme  
 - **positive definite:** pozitif tanımlı  
 - **positive phase:** pozitif faz  
@@ -486,15 +488,15 @@
 - **probability mass function estimation:** olasılık kütle fonksiyonu kestirimi  
 - **product of experts:** uzman çarpımı  
 - **product rule of probability:** olasılığın çarpım kuralı  
-- **pseudolikelihood:** yarı benzerlik  
-
-
-## Q
+- **pseudolikelihood:** yarı benzerlik   
+  
+  
+## Q  
 - **quadrature pair:** dört evreli çift  
-- **quasi-Newton methods:** Newton-vari yöntemler  
-
-
-## R
+- **quasi-Newton methods:** Newton-vari yöntemler   
+  
+  
+## R  
 - **radial basis function:** dairesel baz fonksiyonu  
 - **random search:** rastgele arama  
 - **random variable:** rastgele değişken  
@@ -517,9 +519,9 @@
 - **representational capacity:** gösterimsel kapasite  
 - **restricted Boltzmann machine:** kısıtlandırılmış Boltzmann makinesi  
 - **Ridge regression:** Ridge bağlanımı  
-
-
-## S
+  
+  
+## S  
 - **saddle points:** eyer noktaları  
 - **sample mean:** örnekleme ortalaması  
 - **scalar:** skaler  
@@ -574,9 +576,9 @@
 - **surrogate loss function:** vekil kayıp fonksiyonu  
 - **symmetric matrix:** simetrik matris  
 - **synchronize:** senkron  
-
-
-## T
+  
+  
+## T  
 - **tangent distance:** tanjant mesafesi  
 - **tangent plane:** tanjant düzlemi  
 - **tangent prop:** tanjant yayılımı  
@@ -600,9 +602,9 @@
 - **triangle inequality:** üçgen eşitsizliği  
 - **triangulated graph:** üçgenlemeli çizge  
 - **tuple:** çokuzlu  
-
-
-## U
+  
+  
+## U  
 - **unbiased:** önyargısız  
 - **underdetermined:** eksik belirtilmiş  
 - **underflow:** küçümenlik  
@@ -616,10 +618,10 @@
 - **unnormalized probability distribution:** normalleştirilmemiş olasılık dağılımı  
 - **unpooling:** dağıtım  
 - **unsupervised learning:** denetimsiz öğrenme  
-- **unsupervised pretraining:** denetimsiz öneğitme  
-
-
-## V
+- **unsupervised pretraining:** denetimsiz öneğitme   
+  
+  
+## V  
 - **v-structure:** v-yapısı  
 - **Vapnik-Chervonenkis dimension:** Vapnik-Chervonenkis boyutu  
 - **variable:** değişken  
@@ -634,20 +636,17 @@
 - **virtual adversarial examples:** sanal çekişmeli örnekler  
 - **visible layer:** görünür katman  
 - **visible variable:** görünür değişken  
-- **volumetric data:** hacimsel veri  
-
-
-## W
+- **volumetric data:** hacimsel veri   
+  
+  
+## W  
 - **Wake-Sleep:** Uyandırma-Uyutma  
 - **weight decay:** ağırlık azalımı  
 - **weight space symmetry:** ağırlık uzayı simetrisi  
 - **whitening:** beyazlaştırma  
 - **word embedding:** kelime gömülmesi  
-
-
-## Z
+  
+  
+## Z  
 - **zero-data learning:** verisiz öğrenme  
-- **zero-shot learning:** verisiz öğrenme  
-
-## Diğer
-- **0-1 loss:** 0-1 kayıp  
+- **zero-shot learning:** verisiz öğrenme 
