@@ -54,9 +54,9 @@ B
 -  **bias parameter:** önyargı parametresi
 -  **biased importance sampling:** önyargılı önem örnekleme
 -  **binary relation:** ikili bağıntı
--  **block gibbs sampling:** blok Gibbs örnekleme
--  **boltzmann distribution:** Boltzmann dağılımı
--  **boltzmann machine:** Boltzmann makinesi
+-  **block Gibbs sampling:** blok Gibbs örnekleme
+-  **Boltzmann distribution:** Boltzmann dağılımı
+-  **Boltzmann machine:** Boltzmann makinesi
 -  **broadcasting:** yayımlama
 -  **brute force:** kaba kuvvet
 -  **burn in:** alıştırma
@@ -64,14 +64,14 @@ B
 C
 -
 
--  **calculus:** analiz
--  **calculus of variations:** değişim analizi
+-  **calculus:** hesap
+-  **calculus of variations:** değişim analizi, değişim hesabı
 -  **cascade:** aşamalı
 -  **categorical distribution:** kategorik dağılım
 -  **centering trick:** ortalama hilesi
 -  **central limit theorem:** merkezi limit teoremi
 -  **chain rule:** zincir kuralı
--  **chain rule of productivity:** olasılığın zincir kuralı
+-  **chain rule of probability:** olasılığın zincir kuralı
 -  **chess:** satranç
 -  **chord:** kiriş
 -  **chordal graph:** kirişli çizge
@@ -92,7 +92,7 @@ C
 -  **conditional independence:** koşullu bağımsızlık
 -  **conditional probability:** koşullu olasılık
 -  **conditional RBM:** koşullu RBM
--  **connectionism:** bağlantıcılık
+-  **connectionism:** bağlantısallık
 -  **connectionist temporal classification:** bağlantıcı zamansal
    sınıflandırma
 -  **consistency:** tutarlılık
@@ -130,7 +130,7 @@ C
 D
 -
 
--  **d-seperation:** d-ayırma
+-  **d-seperation:** d-ayırma, boyut ayırma
 -  **damping:** söndürme
 -  **data generating distribution:** veri üretim dağılımı
 -  **data generating process:** veri üretim işlemi
@@ -139,7 +139,7 @@ D
 -  **dataset augmentation:** veri kümesi çeşitleme
 -  **debugging:** hata ayıklama
 -  **decision tree:** karar ağacı
--  **decoder:** kodçözücü
+-  **decoder:** kod çözücü
 -  **deep belief network:** derin inanç ağı
 -  **deep Boltzmann machine:** derin Boltzmann makinesi
 -  **deep feedforward network:** derin ileri besleme ağı
@@ -150,7 +150,7 @@ D
 -  **density estimation:** yoğunluk kestirimi
 -  **derivative:** türev
 -  **design matrix:** açıklayıcı değişkenler matrisi
--  **detector layer:** detektör katman
+-  **detector layer:** detektör katman, tespitçi katman
 -  **diagonal matrix:** köşegen matris
 -  **differential entropy:** diferansiyel entropi
 -  **Dirac delta function:** Dirac delta fonksiyonu
@@ -180,7 +180,7 @@ E
 -  **eigenvalue:** özdeğer
 -  **eigenvector:** özvektör
 -  **elementwise product:** eleman çarpımı
--  **embedding:** gömülme
+-  **embedding:** gömme
 -  **empirical distribution:** deneysel dağılım
 -  **emprical risk:** deneysel risk
 -  **emprical risk minimization:** deneysel risk enküçültmesi
@@ -291,8 +291,8 @@ I
 -  **i.i.d. assumptions:** i.i.d. varsayımları
 -  **identity matrix:** birim matris
 -  **image:** görüntü
--  **ImageNet Large Scale Visual Recognition Challange:** ImageNet Geniş
-   Ölçekli Tanıma Yarışması
+   %- **ImageNet Large Scale Visual Recognition Challange:** ImageNet
+   Geniş Ölçekli Tanıma Yarışması
 -  **immorality:** aykırılık
 -  **implementation:** gerçekleştirme
 -  **importance sampling:** önem örnekleme
@@ -305,7 +305,7 @@ I
 -  **inequality constraint:** eşitsizlik kısıtı
 -  **inference:** çıkarım, çıkarsama
 -  **intercept:** kesim noktası
--  **inferotemporal cortex:** şakak altı korteksi
+   %- **inferotemporal cortex:** şakak altı korteksi
 -  **information retrieval:** bilgi getirimi
 -  **initialization:** ilk değer atama
 -  **interpolate:** ara-değeri bulmak
@@ -341,13 +341,13 @@ L
 -  **ladder network:** basamaklı ağ
 -  **Lagrange multipliers:** Lagrange çarpanları
 -  **Lagrangian:** Lagrange fonksiyonu
--  **laplace distribution:** Laplace dağılımı
+-  **Laplace distribution:** Laplace dağılımı
 -  **latent:** saklı
 -  **latent variable:** saklı değişken
 -  **layer:** katman
 -  **leaky ReLU:** sızıntılı ReLU
 -  **leaky units:** sızıntılı birimler
--  **learnin grate:** öğrenme oranı
+-  **learning rate:** öğrenme oranı
 -  **likelihood:** olabilirlik
 -  **line search:** doğru üzerinde arama
 -  **linear combination:** doğrusal bileşim
@@ -357,17 +357,18 @@ L
 -  **link prediction:** bağlantı öngörüsü
 -  **Lipschitz constant:** Lipschitz sabiti
 -  **Lipschitz continuous:** Lipschitz süreklisi
--  **liquid state machine:** Likit durum makinesi
+-  **liquid state machine:** likit durum makinesi
 -  **local conditional probability distribution:** yerel koşullu
    olasılık dağılımı
 -  **local contrast normalization:** yerel karşıtlık normalleştirmesi
 -  **logistic regression:** lojistik bağlanım
--  **Logistic regression:** Lojistik bağlanım
+-  **logistic regression:** lojistik bağlanım
 -  **logistic sigmoid:** lojistik sigmoid
 -  **long short-term memory:** uzun ömürlü kısa-dönem belleği
 -  **look-up table:** başvuru çizelgesi
 -  **loop:** döngü
 -  **loopy belief propagation:** döngüsel inanç yayılımı
+-  **loss:** kayıp
 -  **loss function:** kayıp fonksiyonu
 
 M
@@ -442,7 +443,7 @@ N
 -  **neural machine translation:** sinirsel makine çevirisi
 -  **neuroscience:** sinirbilim
 -  **Newton’s method:** Newton yöntemi
--  **no free lunch theorem:** \``bedaya yemek yok’’ teoremi
+-  **no free lunch theorem:** \``bedava yemek yok’’ teoremi
 -  **noise-contrastive estimation:** gürültüye karşıt kestirim
 -  **nonlinear:** eğrisel
 -  **nonlinearity:** eğrisellik
@@ -463,7 +464,7 @@ O
 -  **one-shot learning:** tek seferde öğrenme
 -  **operation:** işlem
 -  **optimization:** eniyileme
--  **orthodox statistics:** Ortodoks istatistiği
+-  **orthodox statistics:** ortodoks istatistiği
 -  **orthogonal matching pursuit:** ortogonal eşleştirme takibi
 -  **orthogonal matrix:** ortogonal matris
 -  **orthogonality:** ortogonallik
@@ -480,14 +481,14 @@ P
 -  **parametric model:** parametrik model
 -  **parametric ReLU:** parametrik ReLU
 -  **parent:** üst
--  **parsing:** Sözdizimsel ayrıştırma
+-  **parsing:** sözdizimsel ayrıştırma
 -  **partial derivative:** kısmi türev
 -  **partition function:** bölüntü fonksiyonu
 -  **perceptron:** perseptron
 -  **persistent contrastive divergence:** kalıcı karşıtsal ıraksama
 -  **perturbation analysis:** pertürbasyon analizi
 -  **point estimator:** nokta kestiricisi
--  **policy:** politika
+-  **policy:** politika, strateji
 -  **pooling:** biriktirme
 -  **positive definite:** pozitif tanımlı
 -  **positive phase:** pozitif faz
@@ -684,8 +685,3 @@ Z
 
 -  **zero-data learning:** verisiz öğrenme
 -  **zero-shot learning:** verisiz öğrenme
-
-Diğer
------
-
--  **0-1 loss:** 0-1 kayıp
